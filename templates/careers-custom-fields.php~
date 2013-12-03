@@ -1,0 +1,5 @@
+<?php
+$pod = get_current_pod();
+
+echo $pod->field('location');
+?>
