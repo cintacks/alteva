@@ -103,7 +103,7 @@ function get_category_listing_label() {
 
 function current_page() {
   global $post;
-  return $post->post_name;
+  return get_page_uri($post->ID); 
 }
 
 function current_post_type() {
