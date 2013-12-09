@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
 <div class="row">
-  <div class="span8 main-content">
+  <div class="span12 main-content">
     <?php 
       if(current_page() == 'support') {
         $message = get_current_network_status();
@@ -16,13 +16,6 @@
       <?php get_template_part('templates/careers', 'custom-fields'); ?>
     <?php endif; ?>
     
-  </div>
-  <div class="span4 sidebar-content">
-    <?php if (roots_display_sidebar()) : ?>
-      <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
-        <?php include roots_sidebar_path(); ?>
-      </aside><!-- /.sidebar -->
-    <?php endif; ?>
   </div>
 </div>
 
