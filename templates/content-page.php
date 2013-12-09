@@ -12,6 +12,12 @@
 
     <?php the_content(); ?>
 
+
+    <?php if(current_page() == 'company/careers/careers') : ?>
+      <?php get_template_part('templates/pods', 'career-listing'); ?>
+    <?php endif; ?>
+
+
     <?php if(current_post_type() == 'career') : ?>
       <?php get_template_part('templates/careers', 'custom-fields'); ?>
     <?php endif; ?>

@@ -19,8 +19,4 @@
     <?php get_template_part('templates/pods', 'press-listing'); ?>
 <?php endif; ?>
 
-<?php if(current_page() == 'careers') : ?>
-  <?php get_template_part('templates/pods', 'career-listing'); ?>
-<?php endif; ?>
-
 <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
