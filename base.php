@@ -2,7 +2,20 @@
 <body <?php body_class(); ?>>
 
   <!--[if lt IE 7]><div class="alert">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</div><![endif]-->
-
+  <div class="navbar-inverse">
+    <div class="navbar-inner">
+    <div>
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="nav-icons">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+        <span class="mobilenavtext">Main Nav</span>
+      </a>
+    </div>
+  </div>
+  </div>
   <div id="topbar">
     <div class="maindiv">
       <div class="span1"></div>
@@ -31,7 +44,7 @@
    <div class="content row">   
      <div class="main span14 <?php //echo roots_main_class(); ?>" role="main">
      
-       <?php get_template_part('templates/site-logo'); ?>
+       <span class="wide-logo"><?php get_template_part('templates/site-logo'); ?></span>
        <?php
          do_action('get_header');
          
@@ -41,6 +54,7 @@
            get_template_part('templates/header');
          }
         ?>
+        <span class="mobile-logo"><?php get_template_part('templates/site-logo'); ?></span>
 
 <?php
 include roots_template_path(); 

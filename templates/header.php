@@ -1,5 +1,5 @@
 <header class="banner" role="banner">
-  <div class="container">
+  <div class="container nav-collapse collapse">
     <a href="/get-started" class="get-started button-green">Get Started</a>
     <nav class="nav-main" role="navigation">
       <?php
