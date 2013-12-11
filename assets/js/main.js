@@ -9,7 +9,7 @@ function flagDropdownsWithMultipleItems(parent) {
 function resizeForSmallWindow() {
   $('.wrap').css({'padding-left':'24px'});
   $('html, body').css({'overflow-x':'hidden'});
-  $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.1">');
+  // $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.1">');
 }
 
 function resizeForLargeWindow() {
