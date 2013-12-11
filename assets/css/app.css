@@ -8,8 +8,8 @@ body {
    font-weight:300;
    color:#888888;
    line-height:26px;
-   background: #F8FAF9;
-   width:100%;
+   background: #F8FAF9;/*
+   width:100%;*/
 }
 
 img.hide-empty { display: none; }
@@ -1774,10 +1774,6 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media (max-width: 767px) {
-
-}
 
 
 .post-more { display: none; }
