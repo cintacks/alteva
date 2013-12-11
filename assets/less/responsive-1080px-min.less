@@ -33,6 +33,11 @@
     margin-bottom:40px;
   }
 
+  .top-mobile,
+  .mobile {
+    display: none !important;
+  }
+
   .span16 {
     width: 1200px;
   }
@@ -84,19 +89,24 @@
 
   #slideshow {
     width: 1200px;
+    margin-left: -40px;
+  }
+
+  .nav-collapse.collapse {
+    margin-left:40px;
   }
 
   .wrap {
-    top:-13px;
-    -webkit-box-shadow: #eceeef 0 0 17px;
-           box-shadow: #eceeef 0 0 17px;
+    top:-47px;
+    margin-bottom:0;    
+   margin-bottom: 60px;
   }
 
     [class*="span"],
   .home.page [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 20px;
+    margin-left: -20px;
   }
 
   .page [class*="span"],
@@ -104,10 +114,42 @@
     margin-left: 30px;
   }
 
+  .home-news,
+  .home-press {
+   width:420px;
+   padding: 50px 0 0 46px;
+   margin: -50px 20px 0 19px;
+  }
+
 
   .home.page .row {
     margin-left: -20px;
   }
+
+  .homepage-blocks {
+    margin-left: 0 !important;
+    width: 95%;
+  }
+
+  .home-bottom {
+   clear: both;
+   margin-top: 60px;
+   width: 94%;
+   margin-left: 63px !important;
+  }
+
+  #footer .row,
+  #footer .row2 {
+     clear: both;
+     margin-left: 30px;
+  }
+
+#footer .row2 {
+   border-top:1px solid #d3e1ee;
+   padding-top:10px;
+   margin-top: 30px;
+}
+
 
   /* ==========================================================================
    Menus
@@ -121,7 +163,9 @@
   margin-right: 10%;
   }*/
 
-  
+  #menu-primary-navigation {
+    width: 1000px;
+  }
 
   .menu-primary-navigation-container ul {
    margin: 0;
@@ -303,9 +347,13 @@
   margin: 0;
   }
 
-  /*#menu-primary-navigation .dropdown-menu > .active > a {
+  #menu-primary-navigation .dropdown-menu > .active > a {
   background: #005aa4;
-  }*/
+  }
+
+  #menu-primary-navigation > li > a {
+  color:#003c71;
+  }
 
   #menu-primary-navigation > li > a {
   padding: 8px 14px;
@@ -325,17 +373,36 @@
 
   a.get-started {
   float: right;
-  padding: 2px 16px;
+  padding: 2px 16px !important;
   font-size: 16px !important;
   position: relative;
   margin-top: -73px;
   color:#fff !important;
   }
 
+  #footer a.get-started {
+  float: right;
+  position: relative;
+  top:-30px;
+  right: 0;
+}
+
   a.get-started:hover,
   a.get-started:focus {
   text-decoration: none !important;
   padding: 2px 16px;
+  }
+
+  #footer .row3 {
+    padding: 35px 0 0 179px;
+  }
+
+  .first {
+   float: left;
+  }
+
+  .second {
+     float: right;
   }
 
   /* ===========================================================================
@@ -377,7 +444,7 @@
   font-size: 16px;
   height: auto;
   line-height: 16px;
-  padding: 8px 13px;
+  padding: 8px 13px !important;
   -webkit-border-radius: 4px;
    -moz-border-radius:4px;
    border-radius: 4px;

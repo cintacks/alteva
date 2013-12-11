@@ -19,7 +19,7 @@
   <div id="topbar">
     <div class="maindiv">
       <div class="span1"></div>
-      <div class="span9">
+      <div class="span8">
             <nav class="nav-main" role="navigation">
             <?php
             if (has_nav_menu('top_navigation')) :
@@ -28,7 +28,7 @@
             ?>
             </nav>
           </div>
-          <div class="span4">
+          <div class="span3">
            <?php get_template_part('templates/searchform'); ?> 
         </div>
       </div>
