@@ -1,0 +1,60 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+
+@media (min-width: 768px) and (max-width: 1079px) {
+
+  // Fixed grid
+  #grid > .core(@gridColumnWidth768, @gridGutterWidth768);
+
+  // Fluid grid
+  #grid > .fluid(@fluidGridColumnWidth768, @fluidGridGutterWidth768);
+
+  // Input grid
+  #grid > .input(@gridColumnWidth768, @gridGutterWidth768);
+
+  // No need to reset .thumbnails here since it's the same @gridGutterWidth
+
+	//   #topbar {
+	//   	display: none;
+	//   }
+
+	// .mobile-logo {
+	// 	display: block;
+	// }
+
+	// .wide-logo {
+	// 	display: none;
+	// }
+
+	.container {
+		width: 100%;
+	}
+
+	#topbar [class*="span"] {
+		margin-left: 0;
+	}
+
+	// [class*="span"], .home.page [class*="span"] {
+	// 	float: none;
+	// }
+
+	 /* ==========================================================================
+   Menus
+   ========================================================================== */
+
+  .nav {
+     margin-bottom:0;
+  }
+
+  /*li.menu-alteva-local {
+  margin-right: 10%;
+  }*/
+
+  #topbar {
+  	display: none;
+  }
+
+
+}

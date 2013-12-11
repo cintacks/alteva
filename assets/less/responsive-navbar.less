@@ -171,12 +171,27 @@
     padding-right: 10px;
   }
 
-
 }
 
 
 // DEFAULT DESKTOP
 // ---------------
+
+@media (min-width: 1080px) {
+    .navbar-inverse .navbar-inner {
+      display: none;
+    }
+
+    .affix {
+      position: fixed;
+    }
+
+    .wrap {
+      top:-13px;
+      padding:20px 100px 60px;
+    }
+
+}
 
 @media (min-width: @navbarCollapseDesktopWidth) {
 

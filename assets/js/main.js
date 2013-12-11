@@ -154,6 +154,20 @@ $(document).ready(function() {
   	
 });
 
+  //Disable dropdowns on smaller screens
+  function checkWidth() {
+        var windowSize = $(window).width();
+        if (windowSize > 1080) {
+            $('.dropdown-off').removeClass('dropdown-off').addClass('dropdown');
+        } else if (windowSize <= 1079) {
+            $('.dropdown').removeClass('dropdown').addClass('dropdown-off');
+        } 
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+
 
 
 
