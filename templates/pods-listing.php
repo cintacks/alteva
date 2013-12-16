@@ -19,7 +19,7 @@ if($pod = get_current_pod()) {
   $listing = pods(
     $pod_listing_type, 
     array(
-      'where' => 'category.id = '.$pod->field('ID'),
+      'where' => 't.post_status = "Publish" AND category.id = '.$pod->field('ID'),
       'orderby' => 'CAST(display_order.meta_value AS SIGNED) ASC'
     )
   );
