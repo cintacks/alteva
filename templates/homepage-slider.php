@@ -1,23 +1,47 @@
-<?php $slides = pods('slide', array('limit' => -1)); ?>
+<?php 
 
+$slides = pods('slide', array('limit' => -1));
+
+$data = array(); 
+
+while($slides->fetch()) {
+  $data[] = array(
+    'id' => $slides->field('ID'),
+    'title' => $slides->display('title'),
+    'subtitle' => $slides->display('subtitle'),
+    'link' => $slides->field('link'),
+    'order' => $slides->field('ordering')
+  );
+}
+
+function sortSlides($slide1, $slide2) {
+  if($slide1['order'] == $slide2['order'])
+    return 0;
+
+  return ($slide1['order'] > $slide2['order']) ? 1 : -1;
+}
+
+usort($data, 'sortSlides');
+?>
 <div class="row">
 <div class="pagination-centered" id="slideshow">
   <div class="slides">
-  <?php while($slides->fetch()) : ?>
+  <?php foreach($data as $slide) : ?>
     <div class="slide">  
       <?php echo pods_image(
-        get_post_meta($slides->field('ID'), 'image', true ), 
-        'original'); ?>
+        get_post_meta($slide['id'], 'image', true ), 
+        'original'
+      ); ?>
 
-      <h3><?php echo $slides->display('title') ?></h3> 
+      <h3><?php echo $slide['title'] ?></h3> 
       
       <div class="slide-subtitle">
-        <?php echo $slides->display('subtitle') ?>
+        <?php echo $slide['subtitle'] ?>
       </div>
       
-      <a href="<?php echo $slides->field('link'); ?>">Learn More</a> 
+      <a href="<?php echo $slide['link']; ?>">Learn More</a> 
    </div>
-  <?php endwhile; ?>
+  <?php endforeach; ?>
   </div>
   
   <a class="slider-prev">Prev</a>
