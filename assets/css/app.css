@@ -719,9 +719,7 @@ a.button-lightgrey:focus {
    border:solid #f7f8f8;
    border-width: 3px 0;
    padding: 10px 0 0;
-   margin-bottom: 95px;
    max-height:603px;
-   height:603px;
    display: block;
    position: relative;
    background: #fcfdfd;
@@ -736,18 +734,15 @@ a.button-lightgrey:focus {
    position: absolute;
    z-index: 999;
    cursor:pointer;
-   top: 42%;
 }
 
 .slider-prev {
    background: url(../img/arrow-previous.png) no-repeat;
-   left:107px;
 }
 
 .slider-next {
    background: url(../img/arrow-next.png) no-repeat;
    float: right;
-   right:107px;
 }
 
 .slides {
@@ -769,14 +764,12 @@ a.button-lightgrey:focus {
    clear: both;
    display: inline-block;
    width: auto;
-   padding: 3px 21px;
    text-decoration: none;
    background-color: #01488a;
    -webkit-border-radius:4px;
    -moz-border-radius:4px;
    border-radius:4px;
    color:#fff;
-   font-size:18px;
    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
    text-transform:uppercase;
@@ -1312,14 +1305,10 @@ display: block; clear: both;
    Homepage Blocks
    ========================================================================== */
 
-.homepage-blocks {
-   border-top:1px solid #f2f2f2;
-   margin-left:20px;
-}
+
 
 .homepage-block-one {
    background: url(../img/icon-homepage-businessOwners.png) no-repeat top center;
-   margin-right: 90px;
 }
 
 .homepage-block-two {
@@ -1329,7 +1318,6 @@ display: block; clear: both;
 .homepage-block-one,
 .homepage-block-two {
    position: relative;
-   margin-top:-20px;
    z-index: 999;
    padding-top: 66px;
 }
@@ -1338,16 +1326,11 @@ display: block; clear: both;
 .homepage-blocks h2 {
    margin: 0;
    padding: 0;
-   font-size: 30px;
-   line-height: 30px;
 }
 
 .homepage-blocks p {
    color: #6e6e6e;
    font-weight: 300;
-   line-height: 23px;
-   font-size: 16px;
-   margin-top: 10px;
 }
 
 #partners {

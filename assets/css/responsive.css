@@ -502,6 +502,39 @@
   #slideshow {
     width: 1200px;
     margin-left: -40px;
+    margin-bottom: 95px;
+    height: 603px;
+  }
+  .slides > div > a {
+    font-size: 18px;
+    padding: 3px 21px;
+  }
+  .homepage-block-one,
+  .homepage-block-two {
+    position: relative;
+    margin-top: -20px;
+    z-index: 999;
+  }
+  .homepage-blocks {
+    border-top: 1px solid #f2f2f2;
+    margin-left: 20px;
+  }
+  .homepage-block-one {
+    margin-right: 90px;
+  }
+  .homepage-blocks h1,
+  .homepage-blocks h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .homepage-blocks p {
+    color: #6e6e6e;
+    font-weight: 300;
+    line-height: 23px;
+    font-size: 16px;
+    margin-top: 10px;
   }
   .nav-collapse.collapse {
     margin-left: 40px;
@@ -510,6 +543,23 @@
     top: -47px;
     margin-bottom: 0;
     margin-bottom: 60px;
+  }
+  .slides,
+  .slides img,
+  .slide {
+    min-width: 900px !important;
+    min-height: 491px !important;
+    width: 900px;
+  }
+  .slider-prev,
+  .slider-next {
+    top: 42%;
+  }
+  .slider-prev {
+    left: 107px;
+  }
+  .slider-next {
+    right: 107px;
   }
   [class*="span"],
   .home.page [class*="span"] {
@@ -1171,6 +1221,28 @@
   #topbar [class*="span"] {
     margin-left: 0;
   }
+  .slides,
+  .slides img,
+  .slide {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 900px;
+    max-height: 491px;
+  }
+  #slideshow {
+    margin-bottom: 95px;
+    height: 603px;
+  }
+  .slider-prev,
+  .slider-next {
+    top: 42%;
+  }
+  .slider-prev {
+    left: 3%;
+  }
+  .slider-next {
+    right: 3%;
+  }
   /* ==========================================================================
    Menus
    ========================================================================== */
@@ -1298,9 +1370,34 @@
     margin-bottom: 69px;
   }
   .slides,
-  .slides img {
+  .slides img,
+  .slide {
     width: 100% !important;
     height: auto !important;
+    max-width: 900px;
+    max-height: 491px;
+    min-width: 320px;
+  }
+  #slideshow {
+    height: 495px;
+  }
+  .slides > div > a {
+    padding: 1px 16px;
+    font-size: 15px;
+  }
+  .slider-prev {
+    left: 3%;
+  }
+  .slider-next {
+    right: 3%;
+  }
+  .slider-pager {
+    left: 0 !important;
+    width: 100%;
+  }
+  .slider-prev,
+  .slider-next {
+    top: 42%;
   }
   [class*="span"],
   .home.page [class*="span"] {
@@ -1308,6 +1405,33 @@
   }
   .homepage-blocks {
     margin: 0 20px;
+  }
+  .homepage-block-one,
+  .homepage-block-two {
+    margin-top: 32px;
+    width: 40%;
+    float: left;
+  }
+  .homepage-block-one {
+    margin-left: 5% !important;
+    margin-right: 10%;
+  }
+  .homepage-blocks h1,
+  .homepage-blocks h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .homepage-blocks h1 {
+    font-size: 25px;
+  }
+  .homepage-blocks p {
+    color: #6e6e6e;
+    font-weight: 300;
+    line-height: 23px;
+    font-size: 16px;
+    margin-top: 10px;
   }
   /* ==========================================================================
    Menus
@@ -1717,6 +1841,28 @@
   }
   .carousel-caption {
     position: static;
+  }
+  .slider-prev,
+  .slider-next {
+    display: none !important;
+  }
+  #slideshow {
+    height: 400px;
+  }
+  .slider-pager {
+    left: 0 !important;
+    width: 100%;
+  }
+  .homepage-blocks {
+    border: none;
+  }
+  .homepage-block-one,
+  .homepage-block-two {
+    clear: both;
+    width: 100% !important;
+  }
+  .homepage-block-one {
+    margin-left: auto !important;
   }
 }
 @media (max-width: 1079px) {
