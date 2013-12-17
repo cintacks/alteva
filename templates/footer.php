@@ -2,11 +2,11 @@
 
   
 
-  <div class="row span12">
+  <div class="row span10">
     <?php echo nav_html('primary_navigation'); ?> <a href="/get-started" class="get-started button-green desktop">Get Started</a>
   </div>
 
-  <div class="row2 span12">
+  <div class="row2 span14">
     <div class="mobile-center">
       <div id="footerlogo">Alteva Logo</div>
       <div class="social">

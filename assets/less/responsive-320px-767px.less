@@ -60,9 +60,7 @@
   [class*="span"],
   .uneditable-input[class*="span"], // Makes uneditable inputs full-width when using grid sizing
   .row-fluid [class*="span"] {
-    float: none;
     display: block;
-    width: 100%;
     margin-left: 0;
     .box-sizing(border-box);
   }
@@ -145,8 +143,14 @@
     min-width:320px;
   }
 
+  .span14 {
+    width: 100%;
+  }
+
   #slideshow {
     height:495px;
+    background: #f8f9fb;
+    padding-bottom:20px;
   }
 
   .slides > div > a {
@@ -182,14 +186,18 @@
   }
 
   .homepage-block-one, .homepage-block-two {
-    margin-top:32px;
+    margin-top:-32px;
     width:40%;
     float: left;
   }
 
   .homepage-block-one {
-    margin-left: 5% !important;
+    margin-left: 0 !important;
     margin-right: 10%;
+  }
+
+  .homepage-blocks .span2 {
+    width:20px;
   }
 
   .homepage-blocks h1,
@@ -212,6 +220,97 @@
      margin-top: 10px;
   }
 
+  #partners {
+    background: #f8f9fb;
+    padding:25px 0;
+    box-shadow: inset 0 0 10px #F1F2F4;
+    clear: both;
+    margin:80px 0;
+    float: none;
+    padding:0 30px 25px 30px;
+  }
+
+  #partners a {
+     background: url(../img/icon-techlogos-sm.png) no-repeat;
+     width: 120px;
+     margin: 0 10px;
+     height: 74px;
+     text-indent: -9999px;
+     display: inline-block;
+  }
+
+  .pc {
+    background-position: -160px 0 !important;
+  }
+
+  .bs {
+    background-position: -305px 0 !important;
+  }
+
+  .l3 {
+    background-position: -450px 0 !important;
+  }
+
+  .cs {
+    background-position: -590px 0 !important;
+  }
+
+  #partners a.button-two,
+  a.button-grey {
+    background:none;
+     -webkit-border-radius: 4px;
+     -moz-border-radius:4px;
+     border-radius: 4px;
+     background-color: #bdbdbd;
+     text-indent: 0;
+     text-transform: uppercase;
+     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+     font-size: 13px;
+     color:#fff;
+     width: auto;
+     height: auto;
+     padding: 4px 14px;
+     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+     margin-top: 10px;
+     letter-spacing:1px;
+  }
+
+  #featured-story-one h1 {
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .row#featured-story-one {
+    -webkit-background-size: 45%;
+    background-size: 45%;
+    min-height: 488px;
+  }
+
+  #featured-story-one .spancontent {
+    width: 48%;
+    float: left;
+  }
+
+  #featured-story-one h1.large {
+    font-size: 25px;
+  }
+
+  .case-study {
+    height:397px;
+    padding:20px 0 0;
+  }
+
+  .case-study p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+    .case-study-body {
+      position: relative;
+      top:10%;
+      left:3%;
+    }
+
 
    /* ==========================================================================
    Menus
@@ -233,7 +332,7 @@
 
   footer .nav-collapse, footer .nav-collapse.collapse {
     box-shadow: none;
-    padding-top:23px;
+    padding:23px 0;
   }
 
   .top-mobile .menu-alteva-communications ul {
@@ -353,6 +452,10 @@
   text-shadow:none !important;
   }
 
+  #menu-primary-navigation-2 li:first-child {
+    border-top:solid #d3d7e0 1px;
+  }
+
   .nav-collapse .top-mobile > ul > li > a,
   .nav-collapse .top-mobile > ul > li > ul > li > a {
     color:#fbf5ff;
@@ -470,10 +573,6 @@
   margin-left: 0;
   }
 
-  #menu-primary-navigation.affix li {
-  margin: 0 7px 0 0;
-  }
-
   #menu-primary-navigation .dropdown-menu li {
   margin: 0 !important;
   display: block;
@@ -583,9 +682,20 @@
     clear: both;
   }
 
+ header .nav-collapse.in.collapse {
+    position: fixed;
+    z-index: 9999;
+    top:46px;
+    width:100%;
+  }
+
+ header .nav-collapse.in.collapse li a.button-green {
+    display: none;
+   }
+
+
   a.get-started {
   float: right;
-  padding: 2px 16px;
   font-size: 16px !important;
   position: relative;
   margin-top: -73px;
@@ -595,17 +705,31 @@
   a.get-started:hover,
   a.get-started:focus {
   text-decoration: none !important;
-  padding: 2px 16px;
   }
 
+.home-bottom {
+   clear: both;
+   margin-top: 60px;
+   width: 94%;
+   margin-left: 63px !important;
+}
 
-  .home-news,
-  .home-press {
-    width: 45%;
-    float: left;
-    padding: 50px 0 0 46px;
-    margin: -50px 20px 0 19px;
-  }
+.home-bottom {
+  text-align: center;
+}
+
+.home-news,
+.home-press {
+  background-position: top center !important;
+  background-size:15% !important;
+  padding:69px 0 0 0;
+  margin:0 20px;
+  width:45%;
+}
+
+.home-news {
+  margin-right:3%;
+}
 
   .floathr {
     display: none;
@@ -642,6 +766,16 @@
 // ---------------------
 
 @media (max-width: 480px) {
+
+    // Make all grid-sized elements block level again
+  [class*="span"],
+  .uneditable-input[class*="span"], // Makes uneditable inputs full-width when using grid sizing
+  .row-fluid [class*="span"] {
+    width:100%;
+    float: none;
+    clear:both;
+  }
+
 
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
@@ -739,5 +873,11 @@
   .homepage-block-one {
     margin-left:auto !important;
   }
+
+    #partners a {
+      display: none;
+    }
+
+
 
 }

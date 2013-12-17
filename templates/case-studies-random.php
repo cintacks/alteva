@@ -9,7 +9,7 @@ $case = pods(
   <div class="span5 case-study-image">
     <?php echo pods_image(get_post_meta($case->field('ID'), 'featured_image', true), 'original') ?>
   </div>
-  <div class="span6 case-study-body">
+  <div class="span5 case-study-body">
     <h2 class="light">Case Study:</h2>
     <h1 class="white large"><?php echo $case->display('title') ?></h1>
     <p><?php echo $case->display('excerpt') ?></p>

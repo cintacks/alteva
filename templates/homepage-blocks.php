@@ -1,5 +1,5 @@
 <div class="row homepage-blocks">
-  <div class="span1"></div>
+  <div class="span2"></div>
   <div class="span5 pagination-centered homepage-block-one"> 
    <h2 class="light lgrey">Solutions For...</h3>
    <h1 class="bolder dgrey">Business Owners</h3>
