@@ -174,12 +174,12 @@ $(document).ready(function() {
     $(window).resize(checkWidth);
 
   //Toggle for mobile search
-    $("#searchtoggle").click(function () {
+    $('.searchmobile').click(function () {
 
       var $element = $(this);
 
       $element.toggleClass('open');
-      $element.children('#searchform').toggle(100);
+      $('#searchform').toggle(100);
       $('.in').toggle(100);
 });
 
