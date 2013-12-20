@@ -10,15 +10,20 @@ function resizeForSmallWindow() {
   $('.wrap').css({'padding-left':'24px'});
   $('html, body').css({'overflow-x':'hidden'});
   // $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.1">');
+  $('.sidebar-content').prependTo('footer');
+  $('#searchwrap').appendTo('.navbar-inner');
+  $('#searchform').hide();
 }
 
 function resizeForLargeWindow() {
   $('.wrap').css({'padding-left':'100px'});
   $('html, body').css({'overflow-x':'visible'});
+  $('.sidebar-content').insertAfter('.main-content');
+  $('#searchwrap').appendTo('#topbar .span3');
 }
 
 function checkWindowSize() {
-  if($(window).width() < 1200) 
+  if($(window).width() < 1080) 
     resizeForSmallWindow();
   else
     resizeForLargeWindow();
@@ -167,6 +172,16 @@ $(document).ready(function() {
     checkWidth();
     // Bind event listener
     $(window).resize(checkWidth);
+
+  //Toggle for mobile search
+    $("#searchtoggle").click(function () {
+
+      var $element = $(this);
+
+      $element.toggleClass('open');
+      $element.children('#searchform').toggle(100);
+      $('.in').toggle(100);
+});
 
 
 

@@ -501,6 +501,42 @@ a.button-lightgrey:focus {
    margin: 6px 0 0 0;
 }
 
+/*Mobile Search*/
+.searchmobile {
+  width: 75px;
+  height: 40px;
+  margin:5px 0;
+  display: block;
+  background: url('../img/icon-mobilesearch.png') no-repeat center 50%;
+  cursor: pointer;
+  border-left: 1px solid #5084b6;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  z-index: 99999;
+}
+
+.navbar-inner #searchform {
+  background: #1787c6;
+  border-top:1px solid #78a4c7;
+  position: absolute;
+  top:46px;
+  left:0;
+  height:44px;
+  width:98%;
+  padding:0 2%;
+}
+
+.navbar-inner #searchform .mobile {
+  display: none;
+}
+
+.navbar-inner #s {
+  margin:8px auto;
+  width:91%;
+  position:relative;
+}
+
 #menu-top-navigation li.communications,
 #menu-top-navigation > li.dropdown:hover,
 #menu-top-navigation > li.dropdown:focus {

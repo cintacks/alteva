@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
 <div class="row">
-  <div class="span8 main-content">
+  <div class="span6 main-content">
     <?php 
       if(current_page() == 'support') {
         $message = get_current_network_status();
