@@ -1365,7 +1365,7 @@
     border: none;
     max-width: 100%;
     font-size: 23px;
-    margin-top: 16%;
+    margin: 17% auto 0 auto;
     position: relative;
     line-height: 21px;
   }
@@ -1411,7 +1411,6 @@
   }
   .row {
     text-align: center;
-    padding: 0 20px;
   }
   a.read-more,
   a.read-less {
@@ -1423,6 +1422,10 @@
   }
   .category-listing-label {
     display: none;
+  }
+  .homepage-block-one,
+  .homepage-block-two {
+    margin-top: -32px;
   }
   /* ==========================================================================
    Menus
@@ -1592,7 +1595,7 @@
   }
   .homepage-block-one,
   .homepage-block-two {
-    margin-top: -32px;
+    margin-top: 32px;
     width: 40%;
     float: left;
   }
@@ -2158,7 +2161,6 @@
   }
   .row {
     text-align: center;
-    padding: 0 20px;
   }
   .page-header {
     text-align: center;
@@ -2233,6 +2235,19 @@
     width: 100%;
     float: none;
     clear: both;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: normal;
+  }
+  h1.large {
+    font-size: 27px;
+    line-height: normal;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: normal;
   }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
@@ -2386,6 +2401,60 @@
   }
   .social a {
     margin-right: 10px;
+  }
+  .homepage-blocks p {
+    display: none;
+  }
+  .homepage-blocks h1 {
+    margin-bottom: 15px;
+  }
+  #partners {
+    margin: 40px 0;
+    padding-top: 20px;
+  }
+  #partners h2 {
+    line-height: normal;
+    margin: 10px 0;
+  }
+  #partners br {
+    display: none;
+  }
+  #featured-story-one .spancontent {
+    float: none;
+    width: 100%;
+    background: none;
+  }
+  .row#featured-story-one {
+    -webkit-background-size: 65%;
+    background-size: 65%;
+    min-height: 286px;
+    padding-top: 270px;
+    background-position: top center;
+  }
+  .case-study {
+    height: auto;
+    background-position: -500px 0 !important;
+    width: 100%;
+    background-repeat: repeat;
+    margin: 0 !important;
+  }
+  .case-study-image {
+    top: 0;
+    margin: 0;
+    background: #083d6f;
+    box-shadow: 0 0 8px #05396b;
+    left: 0;
+  }
+  .case-study-body {
+    left: 0;
+    padding: 0 20px;
+  }
+  .case-study a {
+    display: block;
+    width: auto;
+    float: none;
+    clear: both;
+    margin: 10px 0 5px 0;
   }
 }
 @media (max-width: 1079px) {
