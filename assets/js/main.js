@@ -7,7 +7,7 @@ function flagDropdownsWithMultipleItems(parent) {
 }
 
 function resizeForSmallWindow() {
-  $('.wrap').css({'padding-left':'24px'});
+  // $('.wrap').css({'padding-left':'24px'});
   $('html, body').css({'overflow-x':'hidden'});
   // $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.1">');
   $('.sidebar-content').prependTo('footer');
@@ -18,22 +18,36 @@ function resizeForSmallWindow() {
 function resizeForLargeWindow() {
   $('.wrap').css({'padding-left':'100px'});
   $('html, body').css({'overflow-x':'visible'});
-  $('.sidebar-content').insertAfter('.main-content');
+  $('.sidebar-content').insertBefore('footer');
   $('#searchwrap').appendTo('#topbar .span3');
 }
 
 function checkWindowSize() {
-  if($(window).width() < 1080) 
+  if($(window).width() < 1080)
     resizeForSmallWindow();
   else
     resizeForLargeWindow();
+
+  if($(window).width() < 480)
+    mobileWindowSize();
+  else
+    resizeForSmallWindow();
 }
 
+function mobileWindowSize() {
+    if($(window).width() < 480)
+      $('footer .mobile').insertAfter('#menu-primary-navigation-2');
+    else
+      $('footer .mobile').insertAfter('#footer .nav-collapse');
+  }
+
 $(window).resize(checkWindowSize);
+$(window).resize(mobileWindowSize);
 
 $(document).ready(function() {
   
   checkWindowSize();
+  mobileWindowSize();
 
   // Remove dropdowns from main nav in footer
   $('footer .sub-menu .sub-menu').remove();
