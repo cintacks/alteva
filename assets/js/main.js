@@ -36,11 +36,9 @@ function checkWindowSize() {
 
 
 function menuscroll() {
-  if (!$('.btn-navbar').hasClass('in')) {
-    $(this).click(function() {
-      $(document).scrollTop(0);
+  $('.btn-navbar').click(function() {
+      $('html, body').scrollTop(0);
     });
-  }
 }
 
 function mobileWindowSize() {
