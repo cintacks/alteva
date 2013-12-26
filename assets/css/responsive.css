@@ -2369,6 +2369,7 @@
   .nav-collapse .nav li.menu-alteva-communications {
     border-right: 1px solid #5797c5;
     width: 49.5%;
+    min-height: 186px;
   }
   nav.top-mobile {
     width: 100%;
@@ -2394,7 +2395,7 @@
     padding: 0;
   }
   .mobile-center {
-    width: 309px;
+    width: 315px;
     margin: 0 auto;
   }
   #footerlogo {
@@ -2459,7 +2460,7 @@
     float: none;
     clear: both;
     margin: 10px auto 5px auto;
-    max-width: 50%;
+    max-width: 70%;
   }
   .case-study a.button-white {
     margin-right: auto;
@@ -2483,6 +2484,13 @@
     border-top: 1px solid #dedede;
     padding-top: 87px;
     background-position: center 22px !important;
+  }
+  footer .nav-collapse .top-mobile > ul > li.last {
+    border-right: 1px solid #5797c5;
+  }
+  .nav-collapse .top-mobile > ul > li > a,
+  .nav-collapse .top-mobile > ul > li > ul > li > a {
+    padding: 7px 20px;
   }
 }
 @media (max-width: 1079px) {
