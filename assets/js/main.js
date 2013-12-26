@@ -34,11 +34,23 @@ function checkWindowSize() {
     resizeForSmallWindow();
 }
 
+
+function menuscroll() {
+  if (!$('.btn-navbar').hasClass('in')) {
+    $(this).click(function() {
+      $(document).scrollTop(0);
+    });
+  }
+}
+
 function mobileWindowSize() {
-    if($(window).width() < 480)
+    if ($(window).width() < 480) {
+      menuscroll();
       $('footer .mobile').insertAfter('#menu-primary-navigation-2');
-    else
+    }
+    else {
       $('footer .mobile').insertAfter('#footer .nav-collapse');
+    }
   }
 
 $(window).resize(checkWindowSize);
@@ -196,6 +208,8 @@ $(document).ready(function() {
       $('#searchform').toggle(100);
       $('.in').toggle(100);
 });
+
+
 
 
 
