@@ -2492,6 +2492,9 @@
   .nav-collapse .top-mobile > ul > li > ul > li > a {
     padding: 7px 20px;
   }
+  header .nav-collapse.in.collapse {
+    overflow: visible;
+  }
 }
 @media (max-width: 1079px) {
   body {
