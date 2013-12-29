@@ -209,13 +209,13 @@ $(document).ready(function() {
 
     //Swipe support for the slideshow
     $(document).ready(function() {  
-   $("#bootstrapslider").swiperight(function() {  
-      $("#bootstrapslider").carousel('prev');  
-    });  
-   $("#bootstrapslider").swipeleft(function() {  
-      $("#bootstrapslider").carousel('next');  
-   });  
-});  
+       $("#bootstrapslider").swiperight(function() {  
+          $(this).carousel('prev');  
+          });  
+       $("#bootstrapslider").swipeleft(function() {  
+          $(this).carousel('next');  
+     });  
+  });  
 
 
 
