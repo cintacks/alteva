@@ -207,6 +207,16 @@ $(document).ready(function() {
       $('.in').toggle(100);
 });
 
+    //Swipe support for the slideshow
+    $(document).ready(function() {  
+   $("#bootstrapslider").swiperight(function() {  
+      $("#bootstrapslider").carousel('prev');  
+    });  
+   $("#bootstrapslider").swipeleft(function() {  
+      $("#bootstrapslider").carousel('next');  
+   });  
+});  
+
 
 
 

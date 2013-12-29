@@ -8,7 +8,7 @@ Template Name: Homepage
 
 <?php get_template_part('templates/homepage', 'network-status'); ?>
 
-<?php get_template_part('templates/homepage', 'slider'); ?>
+<?php get_template_part('templates/homepage', 'slider-new'); ?>
 
 <?php get_template_part('templates/homepage', 'blocks'); ?>
 
