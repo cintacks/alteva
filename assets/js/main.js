@@ -207,16 +207,6 @@ $(document).ready(function() {
       $('.in').toggle(100);
 });
 
-    //Swipe support for the slideshow
-    $(document).ready(function() {  
-   $("#slideshow .slides").swiperight(function() {  
-      $("#slideshow .slides").carousel('slider-prev');  
-    });  
-   $("#slideshow .slides").swipeleft(function() {  
-      $("#slideshow .slides").carousel('slider-next');  
-   });  
-});  
-
 
 
 
