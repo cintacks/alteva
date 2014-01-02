@@ -23,7 +23,7 @@
     <?php endif; ?>
     
   </div>
-  <div class="span4 sidebar-content">
+  <div class="span3 sidebar-content">
     <?php if (roots_display_sidebar()) : ?>
       <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
         <?php include roots_sidebar_path(); ?>

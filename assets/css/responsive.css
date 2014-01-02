@@ -451,8 +451,14 @@
   .mobile {
     display: none !important;
   }
-  .span14 {
+  .home .span14 {
     width: 1080px;
+  }
+  .span14 {
+    width: 1000px;
+  }
+  .span6.main-content {
+    width: 620px;
   }
   #slideshow {
     width: 100%;
@@ -590,7 +596,7 @@
   #featured-story-two .spancontent {
     margin-right: -50px;
   }
-  .nav-collapse.collapse {
+  .home .nav-collapse.collapse {
     margin-left: 40px;
   }
   .wrap {
@@ -711,11 +717,27 @@
   .nav .dropdown-toggle .caret {
     display: none;
   }
+  .category-listing-label {
+    margin: 25px 0 20px 0;
+    width: 93%;
+    position: relative;
+  }
   .category-list-entry:nth-child(odd) {
     clear: both;
   }
   .category-list-entry.span5 {
     width: 380px;
+  }
+  .category-list-entry {
+    margin-bottom: 37px;
+  }
+  #whyCloud,
+  #services,
+  #whyAlteva {
+    margin-bottom: 30px;
+  }
+  .sidebar {
+    max-width: 300px;
   }
   .dropdown-menu > li > a {
     display: block;
@@ -770,7 +792,7 @@
     box-shadow: none;
   }
   #menu-primary-navigation li {
-    margin: 0 9.5px;
+    margin: 0 11px;
   }
   #menu-primary-navigation li:first-child {
     margin-left: 0;

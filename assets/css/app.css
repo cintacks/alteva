@@ -1764,6 +1764,61 @@ li.last {
 */   font-size: 13px;
 }
 
+/*Quick Contact Drawer*/
+.sod-drawer p {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing:.5px;
+  font-weight: 500;
+}
+
+#sod-drawer-plugin .tag p {
+  margin-bottom: 0;
+}
+
+#sod-drawer-plugin.right #sod-drawer-handle {
+  -webkit-border-radius:8px 8px 0 0px;
+  -moz-border-radius:8px 8px 0 0px;
+  border-radius: 8px 8px 0 0px;
+  padding:7px 46px 8px 20px;
+  box-shadow: none;
+  background: url(../img/arrow-drawer.png) no-repeat 88% 50%;
+  border:none;
+  top:419px !important;
+}
+
+#sod-drawer-plugin.right {
+  -webkit-border-radius:10px 0 0 0;
+  -moz-border-radius:10px 0 0 0;
+  border-radius:10px 0 0 0;
+  height: 525px;
+  top:auto;
+  position: fixed;
+  bottom:100px;
+}
+
+#sod-drawer-plugin .sod-drawer-inner {
+  padding: 20px;
+}
+
+.sod-drawer .w2llabel {
+  color: #fff;
+}
+
+.sod-drawer h3 {
+  margin: 0;
+}
+
+.sod-drawer .w2linput.text, .sod-drawer .w2linput.textarea {
+  width:100%;
+}
+
+#requiredfieldsmsg {
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 400;
+}
+
 
 /* ==========================================================================
    WordPress Generated Classes

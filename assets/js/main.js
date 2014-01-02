@@ -10,7 +10,7 @@ function resizeForSmallWindow() {
   // $('.wrap').css({'padding-left':'24px'});
   $('html, body').css({'overflow-x':'hidden'});
   // $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.1">');
-  $('.sidebar-content').prependTo('footer');
+  // $('.sidebar-content').prependTo('footer');
   $('#searchwrap').appendTo('.navbar-inner');
   $('#searchform').hide();
 }
@@ -18,7 +18,7 @@ function resizeForSmallWindow() {
 function resizeForLargeWindow() {
   $('.wrap').css({'padding-left':'100px'});
   $('html, body').css({'overflow-x':'visible'});
-  $('.sidebar-content').insertBefore('footer');
+  $('.sidebar-content').insertAfter('.main-content');
   $('#searchwrap').appendTo('#topbar .span3');
 }
 
