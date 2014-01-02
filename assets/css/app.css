@@ -554,7 +554,7 @@ a.button-lightgrey:focus {
 #menu-top-navigation > li > a {
    height:40px;
    line-height: 18px;
-   padding: 8px 11px;
+   padding: 8px 12px;
 }
 
 #menu-top-navigation.nav-pills > .active > a,
@@ -691,7 +691,7 @@ a.button-lightgrey:focus {
    height: 92px;
    background:url(../img/logo.png) no-repeat;
    text-indent: -9999px;
-   margin: 4px auto 15px;
+   margin: 17px auto 15px;
    display: block;
 }
 
@@ -784,15 +784,19 @@ a.button-lightgrey:focus {
   margin: 0 auto;
 }
 
-.slides h3,
+.slide {
+  margin-left: 9px;
+}
+
+/*.slides h3,
 .slides .slide-subtitle {
    display: none;
-}   
+}  */ 
 
 .slides img {
    display: block;
    margin: 0 auto;
-   max-height: 491px;
+   max-height: 280px;
 }
 
 .slides > div > a {
@@ -809,7 +813,7 @@ a.button-lightgrey:focus {
    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
    text-transform:uppercase;
    border:0;
-   margin-top: 10px;
+   margin-top: 14px;
    letter-spacing:1px;
 }
 
@@ -836,6 +840,31 @@ a.button-lightgrey:focus {
    left:45%;
    clear: both;
    position: absolute;
+}
+
+.slide-subtitle {
+  font-size: 22px;
+  color: #4c4d4e;
+}
+
+.slide h3 {
+  font-size: 60px;
+  color: #0090c9;
+  font-weight: normal;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin:0 0 25px;
+}
+
+.slide h3:first-line {
+  font-weight: 400;
+  color: #5f6061;
+}
+
+.slide h3:after {
+  content:".";
+  color: #5f6061;
 }
 
 /* ==========================================================================
