@@ -1819,6 +1819,36 @@ li.last {
   font-weight: 400;
 }
 
+/*Status Alert*/
+
+.network-status-problem {
+  width:100%;
+  margin:0 auto;
+  box-shadow:-25rem 0 0 #ca4729, 25rem 0 0 #ca4729;
+}
+
+.network-status-problem p {
+  color: #f3fef6;
+  text-shadow: 1px 1px 1px #ab422d;
+  padding:11px 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background: url(../img/icon-alert.png) no-repeat left 50% #ca4729;
+}
+
+.close-alert {
+  width: 22px;
+  height:21px;
+  display: block;
+  background: url(../img/icon-x.png) no-repeat;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  z-index: 999;
+  top:15px;
+}
+
 
 /* ==========================================================================
    WordPress Generated Classes

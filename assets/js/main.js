@@ -207,6 +207,12 @@ $(document).ready(function() {
       $('.in').toggle(100);
 });
 
+  //Status Update Function
+  $('.network-status-problem').prepend('<div class="close-alert"></div>');
+  $('.close-alert').click(function(){
+      $('.network-status-problem').hide(100);
+  });
+
     //Swipe support for the slideshow
     // $(document).ready(function() {  
  
