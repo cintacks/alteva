@@ -6,20 +6,27 @@ function flagDropdownsWithMultipleItems(parent) {
   });
 }
 
+
 function resizeForSmallWindow() {
   // $('.wrap').css({'padding-left':'24px'});
   $('html, body').css({'overflow-x':'hidden'});
-  // $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.1">');
-  // $('.sidebar-content').prependTo('footer');
+  $('.sidebar-content').prependTo('footer');
   $('#searchwrap').appendTo('.navbar-inner');
   $('#searchform').hide();
+  $('.page-header-border').remove();
+  $('<div class="page-header-border"></div>').prependTo('.page-header');
+  $('.more-listing').insertAfter('.page-header-border');
+  $('.other-categories').hide();
+  $('.more-text').hide();
 }
 
 function resizeForLargeWindow() {
-  $('.wrap').css({'padding-left':'100px'});
+  // $('.wrap').css({'padding-left':'100px'});
   $('html, body').css({'overflow-x':'visible'});
   $('.sidebar-content').insertAfter('.main-content');
   $('#searchwrap').appendTo('#topbar .span3');
+  $('#searchform').show();
+  $('.more-listing').insertAfter('.main-content');
 }
 
 function checkWindowSize() {
@@ -30,9 +37,14 @@ function checkWindowSize() {
 
   if($(window).width() < 480)
     mobileWindowSize();
-  else
-    resizeForSmallWindow();
 }
+
+//Display for subpage expandable menus
+$('.more-title').click(function() {
+  $('.other-categories').slideToggle(100);
+  $('.more-title').toggleClass('on');
+  $('.more-listing').toggleClass('on');
+});
 
 
 function menuscroll() {
@@ -76,6 +88,13 @@ $(document).ready(function() {
     return false;
   });
   */
+
+  var lastlist = $('.on li.last').width();
+  function onlastlist() {
+    $('.other-categories li.last').width(lastlist + 1);
+  }
+
+  onlastlist();
 
   // Main Navigation Tweaks
   var nav = $('#menu-primary-navigation');
@@ -228,7 +247,18 @@ $(document).ready(function() {
     //         //Default is 75px, set to 0 for demo so any distance triggers swipe
     //         threshold:0
     //       });
-    //     });   
+    //     }); 
+
+  //Equal heights for li tags on subpage dropdowns (table/mobile)
+  var tallest = 0;
+  $('.other-categories > li').each(function() {
+      var thisHeight = $(this).height();
+      if(thisHeight > tallest) {
+          tallest = thisHeight;
+      }
+  });
+  $('.other-categories li').height(tallest);
+
 
 
 

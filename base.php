@@ -58,10 +58,10 @@
 
 <?php
 include roots_template_path(); 
-
+get_template_part('templates/pods', 'more-of-same-type');
 get_template_part('templates/pods', 'listing');
 
-get_template_part('templates/pods', 'more-of-same-type');
+
 ?>
 
       </div><!-- /.main -->

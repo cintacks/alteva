@@ -893,7 +893,7 @@ a.button-lightgrey:focus {
   padding: 0 11px 0 0 !important;
   border-right: 1px solid #c2c2c2;
   line-height: 14px;
-  height: 14px;
+  min-height: 14px;
 }
 
 .other-categories li.no-border,
@@ -911,16 +911,22 @@ a.button-lightgrey:focus {
 .main-content p {
   font-size: 17px;
   color: #6b6b6b;
-  line-height: 24px;
+  line-height: 21px;
   font-weight: 300;
 }
 
-.main-content ul {
+.main-content ul,
+.more-listing ul {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
   margin-bottom: 15px;
   color: #888888;
+}
+
+.more-listing ul,
+.more-text {
+  font-weight: 400;
 }
 
 .main-content ul li {
@@ -941,7 +947,7 @@ a.button-lightgrey:focus {
 }
 
 .listing {
-  margin: 55px 0;
+  margin: 55px 0 55px 0px !important;
   position: relative;
 }
 
