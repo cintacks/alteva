@@ -5,7 +5,7 @@
       if(current_page() == 'support') {
         $message = get_current_network_status();
         if($message != "") {
-          echo "<div class='network-status'>{$message}<div id='close-alert'></div></div>";
+          echo "<div class='network-status'>{$message}</div>";
         }
       }
      ?>

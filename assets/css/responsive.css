@@ -1330,11 +1330,6 @@
     max-width: 900px;
     max-height: 491px;
   }
-  #slideshow {
-    margin-bottom: 95px;
-    height: 603px;
-    background: #f8f9fb;
-  }
   #partners {
     background: #f8f9fb;
     padding: 25px 0;
@@ -1392,10 +1387,35 @@
   .slider-next {
     right: 3%;
   }
-  .case-study-body {
+  .home .case-study-body {
     position: relative;
     top: 10%;
     left: 3%;
+  }
+  .home .case-study-body h2 {
+    font-size: 26px;
+  }
+  .row#featured-story-one {
+    min-height: 573px !important;
+  }
+  .home .case-study {
+    height: 495px !important;
+    background-position: 0 0 !important;
+    -webkit-background-size: 100% !important;
+    background-size: 100% !important;
+  }
+  .home .case-study-body h1.large {
+    font-size: 37px;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
+  .home .case-study-body h1 .case-study-image {
+    top: -33% !important;
+    margin-right: 4% !important;
+  }
+  #featured-story-two .spancontent {
+    padding: 25px !important;
+    margin-top: 351px !important;
   }
   .sidebar-content {
     clear: both;
@@ -1625,7 +1645,7 @@
   .slide {
     width: 100% !important;
     height: auto !important;
-    max-width: 900px;
+    max-width: 713px;
     max-height: 491px;
     min-width: 320px;
   }
@@ -1633,40 +1653,62 @@
     width: 100%;
   }
   #slideshow {
-    height: 495px;
+    height: 470px;
     background: #f8f9fb;
     padding-bottom: 20px;
   }
   .slides > div > a {
     padding: 1px 16px;
     font-size: 15px;
+    margin-top: 11px;
   }
   .slider-prev {
-    left: 3%;
+    left: 2%;
   }
   .slider-next {
-    right: 3%;
+    right: 2%;
   }
   .slider-pager {
     left: 0 !important;
     width: 100%;
+    bottom: 13px;
   }
   .slider-prev,
   .slider-next {
     top: 42%;
+  }
+  .slide h3 {
+    font-size: 46px;
+    line-height: 51px;
+  }
+  .slide-subtitle {
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 18px;
+  }
+  .slider-pager a {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 9px;
+    height: 9px;
+    margin: 0 7px;
   }
   [class*="span"],
   .home.page [class*="span"] {
     margin-left: 0;
   }
   .homepage-blocks {
-    margin: 0 20px;
+    margin: 26px 20px;
   }
   .homepage-block-one,
   .homepage-block-two {
-    margin-top: 32px;
-    width: 40%;
+    margin-top: 0;
+    width: 41%;
     float: left;
+  }
+  .homepage-block-two {
+    float: right;
+    right: 3%;
   }
   .homepage-block-one {
     margin-left: 0 !important;
@@ -1679,8 +1721,8 @@
   .homepage-blocks h2 {
     margin: 0;
     padding: 0;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 19px;
+    line-height: 25px;
   }
   .homepage-blocks h1 {
     font-size: 25px;
@@ -1688,26 +1730,36 @@
   .homepage-blocks p {
     color: #6e6e6e;
     font-weight: 300;
-    line-height: 23px;
+    line-height: 21px;
     font-size: 16px;
-    margin-top: 10px;
+    margin: 7px 0 16px 0;
   }
   #partners {
     background: #f8f9fb;
     padding: 25px 0;
     box-shadow: inset 0 0 10px #F1F2F4;
     clear: both;
-    margin: 80px 0;
+    margin: 38px 0;
     float: none;
     padding: 0 30px 25px 30px;
   }
+  #partners h2 {
+    font-size: 20px;
+  }
   #partners a {
     background: url(../img/icon-techlogos-sm.png) no-repeat;
-    width: 120px;
-    margin: 0 10px;
+    width: 115px;
+    margin: 0 1.55%;
     height: 74px;
     text-indent: -9999px;
     display: inline-block;
+  }
+  #partners br {
+    display: none;
+  }
+  #partners h2.quote {
+    font-size: 22px;
+    margin: -6px auto 6px auto;
   }
   .pc {
     background-position: -160px 0 !important;
@@ -1742,32 +1794,87 @@
   }
   #featured-story-one h1 {
     font-size: 19px;
-    line-height: 26px;
+    line-height: 23px;
   }
   .row#featured-story-one {
-    -webkit-background-size: 45%;
-    background-size: 45%;
-    min-height: 488px;
+    -webkit-background-size: 53%;
+    background-size: 53%;
+    min-height: 431px;
   }
   #featured-story-one .spancontent {
-    width: 48%;
+    width: 51%;
     float: left;
+    padding: 23px 29px;
+    text-align: left;
+    background: none;
   }
   #featured-story-one h1.large {
     font-size: 25px;
+    line-height: 26px;
+  }
+  #featured-story-one p,
+  #featured-story-two p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  #featured-story-two {
+    -webkit-background-size: 100% !important;
+    background-size: 100% !important;
+  }
+  #featured-story-two .spancontent {
+    margin-top: 234px;
+    padding: 3px 16px;
+    max-width: 56%;
+    text-align: left;
+  }
+  #featured-story-two h1 {
+    font-size: 22px;
+  }
+  #featured-story-two h1.large {
+    font-size: 26px;
+    line-height: 13px;
+  }
+  #featured-story-two p {
+    margin: 13px 0;
   }
   .case-study {
-    height: 397px;
+    height: 410px;
     padding: 20px 0 0;
+    background-position: -30px 0;
+    -webkit-background-size: 80% !important;
+    -moz-background-size: 80% !important;
+    background-size: 80% !important;
   }
   .case-study p {
     font-size: 16px;
     line-height: 21px;
+    margin-bottom: 22px;
   }
   .case-study-body {
     position: relative;
-    top: 10%;
-    left: 3%;
+    top: 6%;
+    left: 1.5%;
+    text-align: left;
+  }
+  .case-study-body h2 {
+    font-size: 22px;
+  }
+  .case-study-body h1.large {
+    font-size: 26px;
+    line-height: 11px;
+    margin-bottom: 25px;
+  }
+  .case-study-image img {
+    max-width: 63%;
+  }
+  .case-study-image {
+    top: -44%;
+    left: 1%;
+    margin-right: 0;
+  }
+  .close-alert {
+    margin: 0 20px;
+    right: 0;
   }
   /* ==========================================================================
    Menus
@@ -1857,12 +1964,15 @@
     border: solid #5ca2d5 1px;
     border-left: 0;
     border-right: 0;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
     border-radius: 0;
-    padding: 12px 0;
+    padding: 13px 0;
     margin: 0;
+  }
+  #menu-primary-navigation > li > a {
+    padding: 12px 0;
   }
   #menu-primary-navigation-2 > li > a {
     color: #7f90a2;
@@ -1900,12 +2010,15 @@
     border: solid #5ca2d5 1px;
     border-top: 0;
     border-right: 0;
-    padding: 12px 0 13px;
+    padding: 14px 0 13px;
     text-align: center;
     border-radius: 0;
     margin: 0;
     line-height: 18px;
     height: auto;
+  }
+  .nav-collapse .top-mobile > ul > li > a {
+    padding: 12px 0 13px;
   }
   #menu-primary-navigation-1,
   #footer .menu-primary-navigation-container {
@@ -2108,9 +2221,9 @@
   }
   .home-bottom {
     clear: both;
-    margin-top: 60px;
+    margin-top: 0px;
     width: 94%;
-    margin-left: 63px !important;
+    margin-left: 3% !important;
   }
   .home-bottom {
     text-align: center;
@@ -2118,13 +2231,33 @@
   .home-news,
   .home-press {
     background-position: top center !important;
-    background-size: 15% !important;
-    padding: 69px 0 0 0;
+    background-size: 17% !important;
+    padding: 12% 0 0 0;
     margin: 0 20px;
     width: 45%;
   }
-  .home-news {
-    margin-right: 3%;
+  .whitebg {
+    top: -21px;
+    background: none;
+    margin-top: -15px;
+  }
+  .whitebg h2 {
+    font-size: 19px;
+  }
+  .home-bottom h1,
+  .home-bottom h2 {
+    line-height: 25px;
+  }
+  .home-bottom h1.large {
+    font-size: 26px;
+  }
+  .home-press {
+    float: right;
+    -webkit-background-size: 15% !important;
+    background-size: 15% !important;
+  }
+  .view-row {
+    margin-bottom: 14px;
   }
   .floathr {
     display: none;
@@ -2139,6 +2272,18 @@
     position: relative;
     margin-left: 50%;
     left: -20%;
+  }
+  #footerlogo {
+    -webkit-background-size: 90%;
+    background-size: 90%;
+    margin-right: 2px;
+  }
+  .social a {
+    margin-right: 13px;
+  }
+  .social {
+    position: relative;
+    top: 4px;
   }
   #footer .row3 {
     padding: 20px 0;
@@ -2158,6 +2303,9 @@
     border-width: 1px 0;
     position: relative;
     left: 2%;
+  }
+  .home .sidebar-content {
+    display: none;
   }
   .sidebar-content .sidebar {
     width: 100%;
@@ -2252,10 +2400,10 @@
     display: inline-block;
     border-radius: 0;
     box-shadow: none;
-    padding: 13px 14px;
+    padding: 6px 14px;
     text-align: center;
     position: relative;
-    top: -17px;
+    top: -25px;
   }
   footer a.get-started.desktop {
     display: none;

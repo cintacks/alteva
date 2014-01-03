@@ -208,7 +208,7 @@ $(document).ready(function() {
 });
 
   //Status Update Function
-  $('.network-status-problem').prepend('<div class="close-alert"></div>');
+  $('.network-status-problem').append('<div class="closewrap"><div class="close-alert"></div></div>');
   $('.close-alert').click(function(){
       $('.network-status-problem').hide(100);
   });

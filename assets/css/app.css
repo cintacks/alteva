@@ -505,17 +505,16 @@ a.button-lightgrey:focus {
 
 /*Mobile Search*/
 .searchmobile {
-  width: 75px;
-  height: 40px;
-  margin:5px 0;
+  width: 95px;
+  height: 46px;
   display: block;
   background: url('../img/icon-mobilesearch.png') no-repeat center 50%;
   cursor: pointer;
   border-left: 1px solid #5084b6;
   position: absolute;
   right: 0;
-  top: -2px;
   z-index: 99999;
+  top:0;
 }
 
 .navbar-inner #searchform {
@@ -701,7 +700,7 @@ a.button-lightgrey:focus {
   background: url(../img/logo-mobile.png) no-repeat;
   width: 215px;
   height: 50px;
-  margin: 16px auto 0;
+  margin: 19px auto 0;
 }
 
 #topbar .dropdown-menu {
@@ -825,15 +824,18 @@ a.button-lightgrey:focus {
 
 .slider-pager a {
    text-indent: -9999px;
-   background:url(../img/nav-dots.png) no-repeat;
+   background:#eaeaea;
    width: 11px;
    height: 11px;
    display: inline-block;
    margin:0 9px;
+   -webkit-border-radius:50px;
+   -moz-border-radius:50px;
+   border-radius:50px;
 }
 
 .slider-pager a.activeSlide {
-   background-position: -28px 0;
+   background:#bdbdbd;
 }
 
 .slider-pager {
@@ -1684,7 +1686,7 @@ a.read-more:hover, a.read-less:hover {
    width: 155px;
    height: 37px;
    display: block;
-   background: url(../img/logo-footer.png);
+   background: url(../img/logo-footer.png) no-repeat;
    text-indent: -9999px;
    float: left;
    margin-right: 35px;
@@ -1825,16 +1827,18 @@ li.last {
   width:100%;
   margin:0 auto;
   box-shadow:-25rem 0 0 #ca4729, 25rem 0 0 #ca4729;
+  display: table;
+  background: url(../img/icon-alert.png) no-repeat 10px 50% #ca4729;
 }
 
 .network-status-problem p {
   color: #f3fef6;
   text-shadow: 1px 1px 1px #ab422d;
-  padding:11px 0;
+  padding:11px 20px 11px 7%;
   width: 100%;
   text-align: center;
   position: relative;
-  background: url(../img/icon-alert.png) no-repeat left 50% #ca4729;
+  display: table-cell;
 }
 
 .close-alert {
@@ -1844,9 +1848,15 @@ li.last {
   background: url(../img/icon-x.png) no-repeat;
   cursor: pointer;
   float: right;
-  position: relative;
   z-index: 999;
-  top:15px;
+  right:0;
+  vertical-align: middle;
+}
+
+.closewrap {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
 }
 
 
