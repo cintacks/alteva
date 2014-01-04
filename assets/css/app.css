@@ -893,7 +893,6 @@ a.button-lightgrey:focus {
   padding: 0 11px 0 0 !important;
   border-right: 1px solid #c2c2c2;
   line-height: 14px;
-  min-height: 14px;
 }
 
 .other-categories li.no-border,
@@ -978,7 +977,7 @@ a.button-lightgrey:focus {
 
 .listing h2 {
   color: #49779b;
-  line-height: 30px;
+  line-height: 27px;
   border-bottom: 1px solid #dedede;
   margin-bottom: 10px;
   padding-bottom: 10px;

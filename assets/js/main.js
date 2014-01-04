@@ -7,6 +7,16 @@ function flagDropdownsWithMultipleItems(parent) {
 }
 
 
+//Equal heights for li tags on subpage dropdowns (table/mobile)
+var tallest = 0;
+$('.other-categories > li').each(function() {
+    var thisHeight = $(this).height();
+    if(thisHeight > tallest) {
+        tallest = thisHeight;
+    }
+});
+$('.other-categories li').height(tallest);
+
 function resizeForSmallWindow() {
   // $('.wrap').css({'padding-left':'24px'});
   $('html, body').css({'overflow-x':'hidden'});
@@ -20,6 +30,13 @@ function resizeForSmallWindow() {
   $('.more-text').hide();
 }
 
+  //Display for subpage expandable menus
+$('.more-title').click(function() {
+  $('.other-categories').slideToggle(100);
+  $('.more-title').toggleClass('on');
+  $('.more-listing').toggleClass('on');
+});
+
 function resizeForLargeWindow() {
   // $('.wrap').css({'padding-left':'100px'});
   $('html, body').css({'overflow-x':'visible'});
@@ -27,6 +44,8 @@ function resizeForLargeWindow() {
   $('#searchwrap').appendTo('#topbar .span3');
   $('#searchform').show();
   $('.more-listing').insertAfter('.main-content');
+  $('.more-text').show();
+  $('.other-categories').show();
 }
 
 function checkWindowSize() {
@@ -34,17 +53,11 @@ function checkWindowSize() {
     resizeForSmallWindow();
   else
     resizeForLargeWindow();
+    
 
   if($(window).width() < 480)
     mobileWindowSize();
 }
-
-//Display for subpage expandable menus
-$('.more-title').click(function() {
-  $('.other-categories').slideToggle(100);
-  $('.more-title').toggleClass('on');
-  $('.more-listing').toggleClass('on');
-});
 
 
 function menuscroll() {
@@ -89,12 +102,11 @@ $(document).ready(function() {
   });
   */
 
-  var lastlist = $('.on li.last').width();
-  function onlastlist() {
-    $('.other-categories li.last').width(lastlist + 1);
-  }
 
-  onlastlist();
+  //Remove sidebar if empty 
+  if($('.sidebar-content:not(:has(.widget))')) {
+    $('.sidebar-content').hide();
+  }
 
   // Main Navigation Tweaks
   var nav = $('#menu-primary-navigation');
@@ -248,16 +260,6 @@ $(document).ready(function() {
     //         threshold:0
     //       });
     //     }); 
-
-  //Equal heights for li tags on subpage dropdowns (table/mobile)
-  var tallest = 0;
-  $('.other-categories > li').each(function() {
-      var thisHeight = $(this).height();
-      if(thisHeight > tallest) {
-          tallest = thisHeight;
-      }
-  });
-  $('.other-categories li').height(tallest);
 
 
 

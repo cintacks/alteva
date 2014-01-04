@@ -662,6 +662,9 @@
   footer .nav-collapse {
     display: none;
   }
+  .other-categories li {
+    height: 14px !important;
+  }
   /* ==========================================================================
    Menus
    ========================================================================== */
@@ -2014,10 +2017,10 @@
     line-height: 18px;
     height: auto;
   }
-  .nav-collapse .top-mobile > ul > li > ul > li > a {
+  header .nav-collapse .top-mobile > ul > li > ul > li > a {
     padding: 12px 0 13px;
   }
-  .nav-collapse .top-mobile > ul > li > a {
+  header .nav-collapse .top-mobile > ul > li > a {
     padding: 12px 0 13px;
   }
   #menu-primary-navigation-1,
@@ -2292,13 +2295,51 @@
   #footer p {
     margin: 0;
   }
-  .page .main-content {
+  .page .main-content,
+  .single .main-content {
     width: 100%;
     margin-bottom: 30px;
-    padding: 0 20px;
+    padding: 0 60px;
+  }
+  .single .main-content {
+    margin-bottom: 0;
   }
   .solutions .main-content {
     text-align: center;
+  }
+  .pod-listing {
+    padding: 0 20px;
+    text-align: left;
+  }
+  .span6.listing-image {
+    width: 50%;
+  }
+  .span6.listing-image.right {
+    right: -20px;
+  }
+  .span6.listing-image.left {
+    left: -20px;
+  }
+  [class*="span"].listing-text {
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.43em;
+  }
+  .listing-text.right {
+    margin-left: 0 !important;
+  }
+  .listing .left h2 {
+    width: 110%;
+  }
+  a.read-more,
+  a.read-less {
+    text-align: center;
+  }
+  .listing ul {
+    font-size: 15px;
+  }
+  .listing ul > li {
+    line-height: 16px;
   }
   .sidebar-content {
     clear: both;
@@ -2324,8 +2365,8 @@
     text-align: center;
     padding: 46px 0 26px 0;
     background-position: center 6% !important;
-    -webkit-background-size: 16% !important;
-    background-size: 16% !important;
+    -webkit-background-size: 22% !important;
+    background-size: 22% !important;
   }
   .sidebar-content strong,
   .sidebar-content a,
@@ -2390,6 +2431,8 @@
     width: 100%;
     display: block;
     padding: 13px 0;
+    background: #fff;
+    cursor: pointer;
   }
   .more-title:after,
   .more-title.on:after {
@@ -2406,7 +2449,7 @@
   .span6.more-listing {
     width: 100%;
     border-bottom: 1px solid #9ebedb;
-    margin-bottom: 14px;
+    background: #0d6fae;
   }
   .span6.more-listing.on {
     background: #0d6fae;
@@ -2417,6 +2460,9 @@
   }
   .more-title.on:after {
     border-top-color: #fff;
+  }
+  .other-categories {
+    background: #0d6fae;
   }
   .other-categories > li > a {
     color: #fff;
@@ -2437,8 +2483,8 @@
     border: none !important;
     display: table;
   }
-  .main .row:first-child {
-    text-align: center;
+  .other-categories > li:last-child {
+    width: calc(24.9%) !important;
   }
   .page-header {
     text-align: center;
@@ -2456,13 +2502,20 @@
   }
   .page-header h1.title {
     font-size: 26px;
-    margin-bottom: 5px;
+    margin: 0px 0 5px;
+    padding-top: 15px;
+  }
+  .solutions .title {
+    display: none;
   }
   .main-content h1 {
     font-size: 24px;
     padding: 20px 0 0;
     clear: both;
     text-align: center;
+  }
+  .main-content p {
+    font-size: 16px;
   }
   a.read-more,
   a.read-less {
@@ -2473,7 +2526,7 @@
     padding: 4px 10px;
   }
   .row.category-listing {
-    padding: 0 8px;
+    padding: 0 60px;
   }
   .category-listing-label {
     display: none;
@@ -2491,6 +2544,29 @@
   }
   footer a.get-started.desktop {
     display: none;
+  }
+  .news-listing [class*="span"] {
+    padding: 0 60px;
+  }
+  .news-listing p {
+    padding: 0;
+  }
+  .pods-pagination-advanced {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 0 20px;
+  }
+  .news-listing .pods-pagination-advanced a,
+  .pods-pagination-current {
+    color: #fff;
+    display: inline-block;
+    padding: 2px 20px;
+    background: #47a3aa;
+    margin: 0 2px;
+  }
+  .pods-pagination-current {
+    background: #59C4CC;
   }
 }
 @media (min-width: 370px) and (max-width: 667px) {
@@ -2796,6 +2872,12 @@
   }
   .whitebg {
     background: none;
+  }
+  .news-listing .pods-pagination-advanced a,
+  .pods-pagination-current {
+    padding: 11px 20px;
+    display: block;
+    margin: 5px 20px;
   }
 }
 @media (max-width: 1079px) {
