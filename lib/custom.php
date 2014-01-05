@@ -171,7 +171,9 @@ function get_current_network_status($problem_only = false) {
   $messages = array();
 
   while($pod->fetch()) {
-    $messages[] = $pod->display('content');
+    $class = ($pod->field('problem')) ? "problem" : "normal"; 
+
+    $messages[] = "<div class='{$class}'>{$pod->display('content')}</div>";
   }
 
   return join("<br /><br />", $messages);
