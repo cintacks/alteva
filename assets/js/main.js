@@ -286,7 +286,7 @@ $(document).ready(function() {
 
   //Remove empty p tags accidentally put in the CMS
   $('p').each(function() {
-    if($.trim($(this).html()).length > 0) {
+    if($.trim($(this).html()).length < 0) {
         $(this).hide();
     }
   });
