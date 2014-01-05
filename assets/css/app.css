@@ -1028,6 +1028,10 @@ a.button-lightgrey:focus {
   margin-right:-30px;
 }
 
+.listing-image.right {
+  float: right;
+}
+
 .span6.listing-image.right {
   right:-77px\9; /*For IE*/
 }
@@ -1828,7 +1832,8 @@ li.last {
 
 /*Status Alert*/
 
-.network-status-problem {
+.network-status-problem,
+.page-header .network-status {
   width:100%;
   margin:0 auto;
   box-shadow:-25rem 0 0 #ca4729, 25rem 0 0 #ca4729;
@@ -1836,7 +1841,8 @@ li.last {
   background: url(../img/icon-alert.png) no-repeat 10px 50% #ca4729;
 }
 
-.network-status-problem p {
+.network-status-problem p,
+.page-header .network-status {
   color: #f3fef6;
   text-shadow: 1px 1px 1px #ab422d;
   padding:11px 20px 11px 7%;
@@ -1850,7 +1856,7 @@ li.last {
   width: 22px;
   height:21px;
   display: block;
-  background: url(../img/icon-x.png) no-repeat;
+  background: url(../img/icon-x.png) no-repeat -60px 0;
   cursor: pointer;
   float: right;
   z-index: 999;
@@ -1862,6 +1868,37 @@ li.last {
   display: table-cell;
   position: relative;
   vertical-align: middle;
+}
+
+.sidebar .network-status {
+  margin-left: 25px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #9aab0f;
+  padding: 25px 60px;
+  background: #b3c018;
+  position: relative;
+}
+
+.sidebar .network-status:before {
+  width: 29px;
+  height:21px;
+  content:"";
+  background: url(../img/icon-x.png) no-repeat #b3c018 -22px 0px;
+  position: absolute;
+  display: block;
+  left:15px;
+  top:30px;
+}
+
+.sidebar .network-status.problem {
+  background-color: #cd4829;
+  text-shadow: 1px 1px 0 #b94421;
+}
+
+.sidebar .network-status.problem:before {
+  width: 22px;
+  background-position: 0 0 !important;
+  
 }
 
 

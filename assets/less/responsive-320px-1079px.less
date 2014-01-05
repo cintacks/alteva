@@ -928,7 +928,7 @@
   .single .main-content {
     width: 100%;
     margin-bottom:30px;
-    padding:0 60px;
+    padding:0 60px 20px 60px;
   }
 
   .single .main-content {
@@ -1061,6 +1061,17 @@
     right:43%;
     margin-left:-25%;
     top:11%;
+  }
+
+  /*Fix for case study logos*/
+  .case-studies .category-list-entry img {
+    max-width: 72px;
+    right:40%;
+    top:8%;
+  }
+
+  .case-studies .category-list-entry h3 {
+    margin-top: 21%;
   }
 
   .category-list-entry a.button-flatgrey {
@@ -1255,12 +1266,21 @@
     background: #59C4CC;
   }
 
+  .sidebar .network-status {
+    margin: 0;
+    box-shadow:-25rem 0 0 #b3c018, 25rem 0 0 #b3c018;
+  }
+
+  .sidebar .network-status.problem {
+    box-shadow: -25rem 0 0 #cd4829, 25rem 0 0 #cd4829;
+  }
+
 
 }
 
-//Styles that fall between the cracks//
+//Styles that fall between the cracks on larger mobile displays//
 
- @media (min-width:370px) and (max-width: 667px) {
+ @media (min-width:420px) and (max-width: 667px) {
 
     .category-list-entry h3 {
       margin-top:15%;
@@ -1295,6 +1315,15 @@
     padding-left: 0;
     left: 0;
   }
+
+  .case-studies .category-list-entry h3 {
+    margin-top: 12% !important;
+  }
+
+  .listing-image.right {
+    left:0 !important;
+  }
+
 
 }
 
@@ -1844,6 +1873,10 @@
     margin-bottom: 15px;
   }
 
+  .other-categories {
+    float: left;
+  }
+
   .other-categories > li {
     width: 50%;
     text-align: center;
@@ -1851,7 +1884,7 @@
   }
 
   .other-categories > li > a {
-    padding: 0 5px;
+    padding: 5px;
   }
 
   .more-listing .other-categories {
@@ -1906,8 +1939,29 @@
     right:0;
     left:0;
     width: 110%;
-    margin:0 -20% 0 20%;
+    margin:0 -20% 30px 20%;
     position: relative; 
+  }
+
+  .listing-image.right {
+    left:-5%;
+  }
+
+  .listing-image.left {
+    right:-5%;
+  }
+
+  .listing {
+    margin: 5px 0 5px 0px !important;
+  }
+
+  .case-studies .category-list-entry h3 {
+    margin-top: 23%;
+  }
+
+  .sidebar .network-status {
+    position: relative;
+    left:-2%;
   }
 
 

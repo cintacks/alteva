@@ -19,16 +19,20 @@ function resizeForSmallWindow() {
   $('.more-text').hide();
   $('.start').remove();
   $('<div class="mobile start"><a href="/get-started" class="get-started button-green mobile">Get Started</a></div>').insertAfter('header .top-mobile');
+  $('.sidebar .network-status').appendTo('.page-header');
 }
 
   //Display for subpage expandable menus
 $('.more-title').click(function() {
   $('.other-categories').slideToggle(100, function() {
-    if ($('.other-categories').is(':visible'))
-        $('.other-categories').css('display','table-cell');
-  });
   $('.more-title').toggleClass('on');
   $('.more-listing').toggleClass('on');
+  if ($(window).width() < 668) {
+    if ($('.other-categories').is(':visible')) {
+     $('.other-categories').css('display','inline-block');
+    }
+  }
+  });
 });
 
 //Scroll to top when expandable nav is tapped
@@ -47,6 +51,7 @@ function resizeForLargeWindow() {
   $('.sidebar-content').insertAfter('.main-content');
   $('.more-text').show();
   $('.other-categories').show();
+  $('.support .page-header .network-status').appendTo('.sidebar');
 }
 
 function mobileWindowSize() {

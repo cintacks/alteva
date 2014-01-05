@@ -34,12 +34,12 @@ if($pod = get_current_pod()) {
   <div class="row listing">
 
   <?php if($position == 'left') : ?>
+    <div class="span6 listing-image right">
+      <?php echo pods_image(get_post_meta($listing->field('ID'), 'image', true), 'original') ?>
+    </div>
     <div class="span6 listing-text left">
       <h2 class="up"><?php echo $listing->display('title') ?></h2>
       <p><?php echo get_custom_excerpt($listing->display('content')); ?></p>
-    </div>
-     <div class="span6 listing-image right">
-      <?php echo pods_image(get_post_meta($listing->field('ID'), 'image', true), 'original') ?>
     </div>
     <?php $position = 'right'; ?>
 
