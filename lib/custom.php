@@ -176,3 +176,13 @@ function get_current_network_status($problem_only = false) {
 
   return join("<br /><br />", $messages);
 }
+
+add_action('wp_ajax_hide_network_status', 'alteva_hide_network_status');
+
+function alteva_hide_network_status() {
+  setcookie("hide_network_status", 1, time()+3600, "/");
+}
+
+function network_status_visible() {
+  return !isset($_COOKIE['hide_network_status']);
+}

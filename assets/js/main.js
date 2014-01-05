@@ -259,7 +259,12 @@ $(document).ready(function() {
   //Status Update Function
   $('.network-status-problem').append('<div class="closewrap"><div class="close-alert"></div></div>');
   $('.close-alert').click(function(){
-      $('.network-status-problem').slideToggle(100);
+      $('.network-status-problem').hide(100);
+
+      $.post(
+        ajaxurl, 
+	{ 'action': 'hide_network_status' }
+      );
   });
 
     //Swipe support for the slideshow
