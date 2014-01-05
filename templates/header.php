@@ -15,6 +15,6 @@
             ?>
       </nav>
     </nav>
-    <div class="mobile"><a href="/get-started" class="get-started button-green mobile">Get Started</a></div>
+    <div class="mobile start"><a href="/get-started" class="get-started button-green mobile">Get Started</a></div>
   </div>
 </header>

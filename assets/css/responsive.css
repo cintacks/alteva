@@ -1412,7 +1412,7 @@
     line-height: 37px;
     margin-bottom: 10px;
   }
-  .home .case-study-body h1 .case-study-image {
+  .case-study-image {
     top: -33% !important;
     margin-right: 4% !important;
   }
@@ -1869,7 +1869,7 @@
   }
   .case-study-image {
     top: -44%;
-    left: 1%;
+    left: 7%;
     margin-right: 0;
   }
   .close-alert {
@@ -2004,7 +2004,7 @@
   }
   .nav-collapse .top-mobile > ul > li > a,
   .nav-collapse .top-mobile > ul > li > ul > li > a {
-    color: #fbf5ff;
+    color: #c4e8f6;
     font-size: 15px;
     font-weight: 400;
     border: solid #5ca2d5 1px;
@@ -2016,6 +2016,10 @@
     margin: 0;
     line-height: 18px;
     height: auto;
+  }
+  .nav-collapse .top-mobile > ul > li.active > a,
+  .nav-collapse .top-mobile > ul > li > ul > li.active > a {
+    color: #fff;
   }
   header .nav-collapse .top-mobile > ul > li > ul > li > a {
     padding: 12px 0 13px;
@@ -2465,7 +2469,7 @@
     background: #0d6fae;
   }
   .other-categories > li > a {
-    color: #fff;
+    color: #f9faf5;
     display: table-cell;
     text-transform: none;
     font-weight: 400;
@@ -2580,16 +2584,8 @@
   #whyCloud,
   #services,
   #whyAlteva {
-    width: 100%;
-    margin: 0;
-    border: #dddee0 solid;
-    border-width: 1px 0 0 0;
-    width: 90%;
-    background-position: 10px 50% !important;
-    padding: 20px 0 20px 70px;
-    text-align: left;
-    position: relative;
-    left: -10px;
+    -webkit-background-size: 7% !important;
+    background-size: 7% !important;
   }
   #whyAlteva {
     border-width: 1px 0;
@@ -2598,12 +2594,17 @@
     border: none;
   }
   .mobile-center {
-    width: 100%;
+    width: 315px;
     left: 0;
-    margin: 45px auto 0 10%;
+    margin: 0 auto;
+  }
+  .listing .right h2 {
+    width: 100%;
+    padding-left: 0;
+    left: 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 667px) {
   [class*="span"],
   .uneditable-input[class*="span"],
   .row-fluid [class*="span"] {
@@ -2625,7 +2626,7 @@
     line-height: normal;
   }
   .row {
-    text-align: center;
+    text-align: left;
   }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
@@ -2681,7 +2682,7 @@
     display: none !important;
   }
   #slideshow {
-    height: 400px;
+    height: 355px;
   }
   .slider-pager {
     left: 0 !important;
@@ -2704,27 +2705,24 @@
   #whyCloud,
   #services,
   #whyAlteva {
-    width: 100%;
     margin: 0;
     border: #dddee0 solid;
     border-width: 1px 0 0 0;
-    width: 90%;
+    width: 81%;
     background-position: 10px 50% !important;
-    padding: 20px 0 20px 70px;
+    padding: 15px 0 15px 19%;
     text-align: left;
     position: relative;
-    left: -10px;
+    left: -1%;
+    -webkit-background-size: 11% !important;
+    background-size: 11% !important;
   }
   #whyAlteva {
     border-width: 1px 0;
   }
   .sidebar-content {
     border: none;
-  }
-  .mobile-center {
-    width: 100%;
-    left: 0;
-    margin: 45px auto 0 10%;
+    display: inline-block;
   }
   #menu-primary-navigation,
   #menu-primary-navigation-2 {
@@ -2734,7 +2732,7 @@
   #menu-primary-navigation > li > a,
   #menu-primary-navigation-2 > li > a {
     text-align: left;
-    padding: 15px;
+    padding: 12px 15px;
     font-size: 16px;
     text-transform: uppercase;
   }
@@ -2742,12 +2740,16 @@
   .nav-collapse .top-mobile > ul > li > ul > li > a {
     border: none;
     text-align: left;
-    padding: 12px 20px;
+    padding: 12.5px 20px;
   }
   .nav-collapse .nav li.menu-alteva-communications {
-    border-right: 1px solid #5797c5;
+    border-right: 1px solid #5ca2d5;
     width: 49.5%;
     min-height: 186px;
+  }
+  header .nav-collapse .top-mobile > ul > li > ul > li > a,
+  header .nav-collapse .top-mobile > ul > li > a {
+    padding: 8px 17px;
   }
   nav.top-mobile {
     width: 100%;
@@ -2756,6 +2758,24 @@
   .nav-collapse .top-mobile > ul > li {
     width: 49.5%;
   }
+  .mobile a.button-green {
+    box-shadow: none;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .nav-collapse .top-mobile .dropdown-menu a:hover {
+    background: none;
+  }
+  .nav-collapse .top-mobile > ul > li.last {
+    border: none;
+  }
+  .start {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #5ca2d5;
+    margin-bottom: -5px;
+  }
   footer a.get-started {
     margin-top: 0;
     float: none;
@@ -2763,8 +2783,9 @@
     display: inline-block;
     border-radius: 0;
     box-shadow: none;
-    padding: 13px 14px;
+    padding: 9px 14px;
     top: 0;
+    text-align: left;
   }
   footer a.get-started.desktop {
     display: none;
@@ -2775,12 +2796,17 @@
   .mobile-center {
     width: 315px;
     margin: 0 auto;
+    position: relative;
+    left: 9px;
   }
   #footerlogo {
-    margin-right: 15px;
+    margin-right: 0;
   }
   .social a {
-    margin-right: 10px;
+    margin-right: 13px;
+  }
+  footer .nav-main.top-mobile ul {
+    margin: 8px 0;
   }
   .homepage-blocks p {
     display: none;
@@ -2820,7 +2846,7 @@
   }
   .case-study-image {
     top: 0;
-    margin: 0 0 23px 0;
+    margin: 0 0 41px 0;
     background: #083d6f;
     box-shadow: 0 10px 8px #05396b;
     left: 0;
@@ -2831,26 +2857,40 @@
   }
   .case-study p {
     padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
   }
-  .case-study a {
-    display: block;
+  .case-study a.button-white {
+    display: inline-block;
     width: auto;
     float: none;
     clear: both;
     margin: 10px auto 5px auto;
     max-width: 70%;
+    padding: 2px 14px;
   }
   .case-study a.button-white {
     margin-right: auto;
   }
   #featured-story-two {
-    -webkit-background-size: 100% !important;
-    background-size: 100% !important;
-    margin-bottom: 0;
+    -webkit-background-size: 93% !important;
+    background-size: 93% !important;
+    background-position: top center !important;
+    margin: 23px 0 0;
+    min-height: 0;
   }
   #featured-story-two .spancontent {
-    margin-top: 50%;
+    margin-top: 54%;
     background: none;
+    max-width: 100%;
+    text-align: center;
+  }
+  #featured-story-two p {
+    display: none;
+  }
+  #featured-story-two h1.large {
+    margin-bottom: 18px;
   }
   .home-bottom {
     margin: 0 auto !important;
@@ -2860,8 +2900,28 @@
   .home-press {
     margin: 28px 0 0;
     border-top: 1px solid #dedede;
-    padding-top: 96px;
-    background-position: center 22px !important;
+    padding-top: 71px;
+    background-position: center 31px !important;
+  }
+  .whitebg {
+    left: 0;
+    margin-top: 0;
+    top: 0;
+  }
+  .home-bottom .button-lightgrey {
+    margin: 4px 0 16px 0;
+  }
+  .home-bottom .view-row {
+    font-size: 18px;
+    padding: 0 13px;
+    line-height: normal;
+    margin-bottom: 19px;
+  }
+  .home-bottom .view-row a {
+    font-weight: 500;
+  }
+  .wrap {
+    margin-bottom: 83px;
   }
   footer .nav-collapse .top-mobile > ul > li.last {
     border-right: 1px solid #5797c5;
@@ -2878,6 +2938,164 @@
     padding: 11px 20px;
     display: block;
     margin: 5px 20px;
+  }
+  .main-content ul,
+  .more-listing ul {
+    text-align: left;
+    width: 60%;
+    margin: 20px auto;
+  }
+  /*Additional custom homepage styles*/
+  .searchmobile {
+    width: 76px;
+  }
+  .navbar-inner {
+    padding-left: 17px;
+  }
+  .network-status-problem p {
+    padding: 11px 0% 11px 0%;
+    width: 80%;
+    text-align: justify;
+    display: block;
+    margin: 0 20%;
+    font-size: 14px;
+    letter-spacing: .3px;
+    line-height: normal;
+  }
+  .slide h3 {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 30px 0 23px 0;
+  }
+  .slide-subtitle {
+    font-size: 19px;
+    line-height: 23px;
+    padding: 0 10px;
+  }
+  .slides > div > a {
+    font-size: 19px;
+    padding: 2px 20px;
+    margin-top: 6px;
+  }
+  .slider-pager a {
+    width: 11px;
+    height: 11px;
+    margin: 0 9px;
+  }
+  .slider-pager {
+    bottom: 3px;
+  }
+  .slide {
+    margin: 0;
+  }
+  .homepage-blocks {
+    margin: 15px 20px;
+  }
+  .homepage-block-two {
+    margin-top: 33px;
+  }
+  #partners {
+    margin: 34px 0;
+    padding: 10px 15px 25px 15px;
+  }
+  #partners h2 {
+    line-height: 29px;
+  }
+  #partners a:last-child {
+    display: block;
+    padding: 4px 15px;
+  }
+  .row#featured-story-one {
+    -webkit-background-size: 88%;
+    background-size: 88%;
+    padding-top: 256px;
+  }
+  #featured-story-one .spancontent {
+    text-align: center;
+  }
+  #featured-story-one .spancontent p {
+    display: none;
+  }
+  #featured-story-one h1.large {
+    margin-bottom: 17px;
+  }
+  .case-study-body {
+    text-align: center;
+  }
+  .case-study-body h1.large {
+    margin: 21px;
+  }
+  /*Additional subpage styles*/
+  .page .main-content,
+  .single .main-content {
+    padding: 0 20px;
+  }
+  a.read-more,
+  a.read-less {
+    width: 100%;
+    border-radius: 0;
+    margin: 20px -40px;
+    padding: 8px 40px;
+    position: relative;
+  }
+  .row.category-listing {
+    padding: 0 20px;
+  }
+  .category-list-entry {
+    margin-bottom: 15px;
+  }
+  .other-categories > li {
+    width: 50%;
+    text-align: center;
+    padding: 5px 0 !important;
+  }
+  .other-categories > li > a {
+    padding: 0 5px;
+  }
+  .more-listing .other-categories {
+    width: 100%;
+    margin: 0;
+  }
+  .other-categories > li:last-child {
+    width: calc(49.9%) !important;
+  }
+  [class*="span"].listing-text {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .listing .left h2 {
+    width: 100%;
+  }
+  .listing .right h2 {
+    width: 100%;
+    padding-left: 0;
+    left: 0;
+  }
+  .listing h2 {
+    border: none;
+    text-align: center;
+  }
+  .main-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pod-listing {
+    padding: 0 10px;
+  }
+  .listing ul > li {
+    line-height: 23.5px;
+  }
+  .listing-image.right img,
+  .listing-image.left img {
+    width: 100%;
+  }
+  .listing-image.right,
+  .listing-image.left {
+    right: 0;
+    left: 0;
+    width: 110%;
+    margin: 0 -20% 0 20%;
+    position: relative;
   }
 }
 @media (max-width: 1079px) {
