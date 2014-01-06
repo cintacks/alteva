@@ -35,13 +35,6 @@ $('.more-title').click(function() {
   });
 });
 
-//Scroll to top when expandable nav is tapped
-function menuscroll() {
-  $('.btn-navbar').click(function() {
-      $('html, body').scrollTop(0);
-  });
-}
-
 function resizeForLargeWindow() {
   // $('.wrap').css({'padding-left':'100px'});
   $('html, body').css({'overflow-x':'visible'});
@@ -56,7 +49,6 @@ function resizeForLargeWindow() {
 
 function mobileWindowSize() {
     if ($(window).width() < 668) {
-      menuscroll();
       $('footer .mobile').insertAfter('#menu-primary-navigation-2');
       $('.start').remove();
       $('<div class="mobile start"><a href="/get-started" class="get-started button-green mobile">Get Started</a></div>').prependTo('header .top-mobile');
@@ -145,6 +137,15 @@ $(document).ready(function() {
     return false;
   });
   */
+
+  //Scroll to top when expandable nav is tapped
+function menuscroll() {
+  $('.btn-navbar').click(function() {
+      $('body,html').scrollTop(0);
+  });
+}
+
+menuscroll();
 
 
   // Main Navigation Tweaks

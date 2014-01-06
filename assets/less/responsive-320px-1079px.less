@@ -1065,13 +1065,22 @@
 
   /*Fix for case study logos*/
   .case-studies .category-list-entry img {
-    max-width: 72px;
-    right:40%;
-    top:8%;
+    // max-width: 72px;
+    // right:40%;
+    // top:8%;
+    display: none;
+  }
+
+  .case-studies .category-list-entry {
+    display: table;
   }
 
   .case-studies .category-list-entry h3 {
-    margin-top: 21%;
+    display: table-cell;
+    vertical-align: middle;
+    margin:0 auto;
+    line-height: normal;
+    padding: 0 10px;
   }
 
   .category-list-entry a.button-flatgrey {
@@ -1286,10 +1295,10 @@
       margin-top:15%;
     }
 
-    .category-list-entry {
-      width:100%;
-      float:none;
-    }
+    // .category-list-entry {
+    //   width:100%;
+    //   float:none;
+    // }
 
     #whyCloud, #services, #whyAlteva {
     -webkit-background-size: 7% !important;
@@ -1770,7 +1779,6 @@
     font-size: 14px;
     letter-spacing: .3px;
     line-height: normal;
-    text-transform: none;
   }
 
   .slide h3 {
@@ -1873,6 +1881,7 @@
 
   .category-list-entry {
     margin-bottom: 15px;
+    display: table;
   }
 
   .other-categories {
@@ -1955,10 +1964,6 @@
 
   .listing {
     margin: 5px 0 5px 0px !important;
-  }
-
-  .case-studies .category-list-entry h3 {
-    margin-top: 23%;
   }
 
   .sidebar .network-status {
