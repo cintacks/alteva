@@ -1873,6 +1873,7 @@ li.last {
 .network-status-problem p,
 .page-header .network-status p {
    display: table-cell;
+   text-transform: none;
 }
 
 .close-alert {
