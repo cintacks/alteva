@@ -7,6 +7,20 @@
   <meta charset="utf-8">
   <title><?php wp_title('|', true, 'right'); ?></title>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.ico" />
+  //Fix Windows 8 Viewport
+	<script type="text/javascript"> 
+	<!--
+	(function() {
+	    if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	        var msViewportStyle = document.createElement("style");
+	        msViewportStyle.appendChild(
+	            document.createTextNode("@-ms-viewport{width:auto!important}")
+	        );
+	        document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+	    }
+	})();
+	//-->
+  </script>
   <script type="text/javascript">
     var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
   </script>
