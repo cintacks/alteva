@@ -2,8 +2,6 @@
    Base
    ========================================================================== */
 
-@-ms-viewport{width:device-width;}
-
 body {
    font-family:"Lato";
    font-size:18px;
@@ -24,6 +22,11 @@ a {
    -ms-transition: all 0.2s ease;
    -o-transition: all 0.2s ease;
    transition: all 0.2s ease;
+   font-weight: 400;
+}
+
+.navbar-inverse .mobilenavtext {
+  font-weight: 300;
 }
 
 a:hover, a:focus {
@@ -1798,6 +1801,18 @@ li.last {
   background: url(../img/arrow-drawer.png) no-repeat 88% 50%;
   border:none;
   top:419px !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome */
+    #sod-drawer-plugin.right #sod-drawer-handle {
+      top:419px !important;
+    }
+
+    /* Safari only override */
+    ::i-block-chrome,.myClass {
+      top:423px !important;
+    }
 }
 
 #sod-drawer-plugin.right {

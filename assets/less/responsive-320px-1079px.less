@@ -139,7 +139,7 @@
   .slides img,
   .slide {
     width: 100% !important;
-    height: auto !important;
+    // height: auto !important;
     max-width:713px;
     max-height:491px;
     min-width:320px;
@@ -150,7 +150,7 @@
   }
 
   #slideshow {
-    height:470px;
+    // height:470px;
     background: #f8f9fb;
     padding-bottom:20px;
   }
@@ -382,8 +382,13 @@
 
   .case-study p {
     font-size: 16px;
-    line-height: 21px;
+    line-height: 18px;
     margin-bottom: 22px;
+    max-width: 80%
+  }
+
+  .case-study a.button-white {
+    margin-right:5px;
   }
 
   .case-study-body {
@@ -760,7 +765,8 @@
   .nav-collapse .top-mobile .nav > li > a:hover, 
   .nav-collapse .top-mobile .nav > li > a:focus, 
   .nav-collapse .top-mobile .dropdown-menu a:hover, 
-  .nav-collapse .top-mobile .dropdown-menu a:focus {
+  .nav-collapse .top-mobile .dropdown-menu a:focus,
+  .nav-collapse .top-mobile > ul > li > ul > li.active > a {
   background-color: #0D6FAE;
   color:#fff;
   }
@@ -950,7 +956,7 @@
   }
 
   .span6.listing-image.right {
-    right:-20px;
+    right:0;
   }
 
   .span6.listing-image.left {
@@ -1284,693 +1290,29 @@
     box-shadow: -25rem 0 0 #cd4829, 25rem 0 0 #cd4829;
   }
 
-
-}
-
-//Styles that fall between the cracks on larger mobile displays//
-
- @media (min-width:420px) and (max-width: 667px) {
-
-    .category-list-entry h3 {
-      margin-top:15%;
-    }
-
-    // .category-list-entry {
-    //   width:100%;
-    //   float:none;
-    // }
-
-    #whyCloud, #services, #whyAlteva {
-    -webkit-background-size: 7% !important;
-    background-size: 7% !important;
+  .search article,
+  .qa-faq {
+    padding:0 60px 20px 60px;
+    margin-bottom:20px;
+    border-bottom:1px solid #dedede;
   }
 
-  #whyAlteva {
-    border-width:1px 0;
-  }
-
-  .sidebar-content {
-    border:none;
-  }
-
-  .mobile-center {
-    width: 315px;
-    left:0;
-    margin: 0 auto;
-  }
-
-  .listing .right h2 {
-    width: 100%;
-    padding-left: 0;
-    left: 0;
-  }
-
-  .case-studies .category-list-entry h3 {
-    margin-top: 12% !important;
-  }
-
-  .listing-image.right {
-    left:0 !important;
-  }
-
-
-}
-
-// UP TO LANDSCAPE PHONE
-// ---------------------
-
-@media (max-width: 667px) {
-
-    // Make all grid-sized elements block level again
-  [class*="span"],
-  .uneditable-input[class*="span"], // Makes uneditable inputs full-width when using grid sizing
-  .row-fluid [class*="span"] {
-    width:100%;
-    float: none;
-    clear:both;
-  }
-
-  h1, h2, h3 {
-    font-weight: normal;
-  }
-
-  h1.large {
-    font-size: 27px;
-    line-height: normal;
-  }
-
-  h2 {
+  .main-content .qa-faq h3 {
     font-size: 20px;
-    line-height: normal;
   }
 
-  .row {
-    text-align: left;
+  .page.faq .main-content {
+    padding: 0;
   }
 
-
-  // Smooth out the collapsing/expanding nav
-  .nav-collapse {
-    -webkit-transform: translate3d(0, 0, 0); // activate the GPU
-  }
-
-  // Block level the page header small tag for readability
-  .page-header h1 small {
-    display: block;
-    line-height: @baseLineHeight;
-  }
-
-  // Update checkboxes for iOS
-  input[type="checkbox"],
-  input[type="radio"] {
-    border: 1px solid #ccc;
-  }
-
-  // Remove the horizontal form styles
-  .form-horizontal {
-    .control-label {
-      float: none;
-      width: auto;
-      padding-top: 0;
-      text-align: left;
-    }
-    // Move over all input controls and content
-    .controls {
-      margin-left: 0;
-    }
-    // Move the options list down to align with labels
-    .control-list {
-      padding-top: 0; // has to be padding because margin collaspes
-    }
-    // Move over buttons in .form-actions to align with .controls
-    .form-actions {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  // Medias
-  // Reset float and spacing to stack
-  .media .pull-left,
-  .media .pull-right  {
-    float: none;
-    display: block;
-    margin-bottom: 10px;
-  }
-  // Remove side margins since we stack instead of indent
-  .media-object {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  // Modals
-  .modal {
-    top:   10px;
-    left:  10px;
-    right: 10px;
-  }
-  .modal-header .close {
-    padding: 10px;
-    margin: -10px;
-  }
-
-  // Carousel
-  .carousel-caption {
-    position: static;
-  }
-
-  .slider-prev,
-  .slider-next {
-    display: none !important;
-  }
-
-  #slideshow {
-    height:355px;
-  }
-
-  .slider-pager {
-    left:0 !important;
-    width:100%;
-  }
-
-  .homepage-blocks {
-    border:none;
-  }
-
-  .homepage-block-one, .homepage-block-two {
-    clear:both;
-    width: 100% !important;
-  }
-
-  .homepage-block-one {
-    margin-left:auto !important;
-  }
-
-    #partners a {
-      display: none;
-    }
-
-  #whyCloud, #services, #whyAlteva {
-    margin: 0;
-    border:#dddee0 solid;
-    border-width:1px 0 0 0;
-    width:81%;
-    background-position: 10px 50% !important;
-    padding:15px 0 15px 19%;
-    text-align: left;
-    position: relative;
-    left:-1%;
-    -webkit-background-size: 11% !important;
-    background-size: 11% !important;
-  }
-
-  #whyAlteva {
-    border-width:1px 0;
-  }
-
-  .sidebar-content {
-    border:none;
-    display: inline-block;
-  }
-
-
-  //Mobile Menus//
-  #menu-primary-navigation, #menu-primary-navigation-2 {
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  #menu-primary-navigation > li > a, #menu-primary-navigation-2 > li > a {
-    text-align: left;
-    padding:12px 15px;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-
-  .nav-collapse .top-mobile > ul > li > a, .nav-collapse .top-mobile > ul > li > ul > li > a {
-    border:none;
-    text-align: left;
-    padding:12.5px 20px;
-  }
-
-  .nav-collapse .nav li.menu-alteva-communications {
-    border-right:1px solid #5ca2d5;
-    width:49.5%;
-    min-height:186px;
-  }
-
-  header .nav-collapse .top-mobile > ul > li > ul > li > a,
-  header .nav-collapse .top-mobile > ul > li > a {
-    padding: 8px 17px;
-  }
-
-  nav.top-mobile {
-    width:100%;
-  }
-
-  footer .nav-collapse .top-mobile > ul > li.last,
-  .nav-collapse .top-mobile > ul > li {
-    width:49.5%;
-  }
-
-  .mobile a.button-green {
-    box-shadow: none;
-    margin-bottom:0px;
-    text-align: center;
-  }
-
-  .nav-collapse .top-mobile .dropdown-menu a:hover {
-  background: none;
-  }
-
-  .nav-collapse .top-mobile > ul > li.last {
-    border:none;
-  }
-
-  .start {
-    display: inline-block;
-    width: 100%;
-    height:100%;
-    border-bottom:1px solid #5ca2d5;
-    margin-bottom: -5px;
-  }
-
-  footer a.get-started {
-    margin-top:0;
-    float:none;
-    width: 100%;
-    display: inline-block;
-    border-radius:0;
-    box-shadow: none;
-    padding:9px 14px;
-    top:0;
-    text-align: left;
-  }
-
-   footer a.get-started.desktop {
-    display: none;
-   }
-
-   #footer .row3 {
-    padding:0;
-   }
-
-   .mobile-center {
-    width:315px;
+  .post-nav {
     margin:0 auto;
-    position: relative;
-    left:9px;
-   }
-
-   #footerlogo {
-    margin-right: 0;
-   }
-
-   .social a {
-    margin-right: 13px;
-   }
-
-   footer .nav-main.top-mobile ul {
-    margin: 8px 0;
-   }
-
-   .homepage-blocks p {
-    display: none;
-   }
-
-   .homepage-blocks h1 {
-    margin-bottom: 15px;
-   }
-
-   #partners {
-    margin: 40px 0;
-    padding-top: 20px;
-   }
-
-   #partners h2 {
-    line-height: normal;
-    margin: 10px 0;
-   }
-
-   #partners br {
-    display: none;
-   }
-
-   #featured-story-one .spancontent {
-    float: none;
-    width: 100%;
-    background: none;
-   }
-
-   .row#featured-story-one {
-    -webkit-background-size: 65%;
-    background-size: 65%;
-    min-height: 286px;
-    padding-top: 270px;
-    background-position: top center;
-   }
-
-  .case-study {
-    height: auto;
-    background: url(../img/bg-casestudymobile.png) repeat;
-    width:100%;
-    margin: 0 !important;
-    padding:0 0 20px 0;
-  }
-
-  .case-study-image {
-    top:0;
-    margin: 0 0 41px 0;
-    background: #083d6f;
-    box-shadow: 0 10px 8px #05396b;
-    left:0;
-  }
-
-  .case-study-body {
-    left:0;
-    padding:0 20px;
-  }
-
-  .case-study p {
-    padding-bottom:5px;
-    font-size: 14px;
-    line-height: 19px;
-    margin-bottom: 10px;
-  }
-
-  .case-study a.button-white {
-    display: inline-block;
-    width: auto;
-    float: none;
-    clear: both;
-    margin: 10px auto 5px auto;
-    max-width:70%;
-    padding: 2px 14px;
-  }
-
-  .case-study a.button-white {
-    margin-right:auto;
-  }
-
-  #featured-story-two {
-    -webkit-background-size: 93% !important;
-    background-size: 93% !important;
-    background-position: top center !important;    
-    margin:23px 0 0;
-    min-height: 0;
-  }
-
-  #featured-story-two .spancontent {
-    margin-top: 54%; 
-    background: none;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  #featured-story-two p {
-    display: none;
-  }
-
-  #featured-story-two h1.large {
-    margin-bottom: 18px;
-  }
-
-  .home-bottom {
-    margin:0 auto !important;
-    width:94% !important;
-  }
-
-  .home-news,
-  .home-press {
-    margin:28px 0 0;
-    border-top:1px solid #dedede;
-    padding-top:71px;
-    background-position: center 31px !important;
-  }
-
-  .whitebg {
-    left:0;
-    margin-top: 0;
-    top:0;
-  }
-
-  .home-bottom .button-lightgrey {
-    margin: 4px 0 16px 0;
-  }
-
-  .home-bottom .view-row {
-    font-size: 18px;
-    padding: 0 13px;
-    line-height: normal;
-    margin-bottom: 19px;
-  }
-
-  .home-bottom .view-row a {    
-    font-weight: 500;
-  }
-
-  .wrap {
-    margin-bottom: 83px;
-  }
-
-
-  footer .nav-collapse .top-mobile > ul > li.last {
-    border-right:1px solid #5797c5;
-  }
-
-  .nav-collapse .top-mobile > ul > li > a, .nav-collapse .top-mobile > ul > li > ul > li > a {
-    padding:7px 20px;
-  }
-
-  .whitebg {
-    background: none;
-  }
-
-  .news-listing .pods-pagination-advanced a,
-  .pods-pagination-current {
-    padding: 11px 20px;
-    display: block;
-    margin: 5px 20px;
-  }
-
-  .main-content ul, .more-listing ul {
-    text-align: left;
-    width:60%;
-    margin:20px auto;
-  }
-
-  /*Additional custom homepage styles*/
-
-  .searchmobile {
-    width: 76px;
-  }
-
-  .navbar-inner {
-    padding-left: 17px;
-  }
-
-  .network-status-problem p,
-  .page-header .network-status p {
-    padding: 11px 0% 11px 0%;
-    width: 80%;
-    text-align: center;
-    display: block;
-    margin: 0 20%;
-    font-size: 14px;
-    letter-spacing: .3px;
-    line-height: normal;
-  }
-
-  .slide h3 {
-    font-size: 30px;
-    line-height: 35px;
-    margin: 30px 0 23px 0;
-  }
-
-  .slide-subtitle  {
-    font-size: 19px;
-    line-height: 23px;
-    padding: 0 10px;
-  }
-
-  .slides > div > a {
-    font-size: 19px;
-    padding: 2px 20px;
-    margin-top: 6px;
-  }
-
-  .slider-pager a {
-    width: 11px;
-    height: 11px;
-    margin: 0 9px;
-  }
-
-  .slider-pager {
-    bottom:3px;
-  }
-
-  .slide {
-    margin: 0;
-  }
-
-  .homepage-blocks {
-    margin: 15px 20px;
-  }
-
-  .homepage-block-two {
-    margin-top: 33px;
-  }
-
-  #partners {
-    margin: 34px 0;
-    padding: 10px 15px 25px 15px;
-  }
-
-  #partners h2 {
-    line-height: 29px;
-  }
-
-  #partners a:last-child {
-    display: block;
-    padding: 4px 15px;
-  }
-
-  .row#featured-story-one {
-    -webkit-background-size: 88%;
-    background-size: 88%;
-    padding-top: 256px;
-  }
-
-  #featured-story-one .spancontent {
-    text-align: center;
-  }
-
-  #featured-story-one .spancontent p {
-    display: none;
-  }
-
-  #featured-story-one h1.large {
-    margin-bottom: 17px;
-  }
-
-  .case-study-body {
-    text-align: center;
-  }
-
-  .case-study-body h1.large {
-    margin: 21px;
-  }
-
-  /*Additional subpage styles*/
-
-  .page .main-content, .single .main-content {
-    padding:0 20px;
-  }
-
-  a.read-more, a.read-less {
-    width: 100%;
-    border-radius: 0;
-    margin: 20px -40px 0 -40px;
-    padding: 8px 40px;
-    position: relative;
-  }
-
-  .row.category-listing {
-    padding: 0 20px;
-  }
-
-  .category-list-entry {
-    margin-bottom: 15px;
     display: table;
   }
 
-  .other-categories {
-    float: left;
+  .sidebar .widget-inner > ul {
+    margin-left:0;
   }
-
-  .other-categories > li {
-    width: 50%;
-    text-align: center;
-    // padding: 5px 0 !important;
-  }
-
-  .other-categories > li > a {
-    padding: 5px;
-  }
-
-  .more-listing .other-categories {
-    width: 100%;
-    margin: 0;
-  }
-
-  .other-categories > li:last-child {
-    width: calc(50% - .1) !important;
-  }
-
-  [class*="span"].listing-text {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .listing .left h2 {
-    width: 100%;
-  }
-
-  .listing .right h2 {
-    width: 100%;
-    padding-left: 0;
-    left: 0;
-  }
-
-  .listing h2 {
-    border:none;
-    text-align: center;
-  }
-
-  .main-content p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .pod-listing {
-    padding: 0 10px;
-  }
-
-  .listing ul > li {
-    line-height: 23.5px;
-  }
-
-  .listing-image.right img,
-  .listing-image.left img {
-    width: 100%;
-  }
-
-  .listing-image.right,
-  .listing-image.left {
-    right:0;
-    left:0;
-    width: 110%;
-    margin:0 -20% 30px 20%;
-    position: relative; 
-  }
-
-  .listing-image.right {
-    left:-5%;
-  }
-
-  .listing-image.left {
-    right:-5%;
-  }
-
-  .listing {
-    margin: 5px 0 5px 0px !important;
-  }
-
-  .sidebar .network-status {
-    position: relative;
-    left:-2%;
-  }
-
 
 
 }

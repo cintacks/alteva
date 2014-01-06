@@ -301,9 +301,10 @@ menuscroll();
 
 });
 
+$('.sidebar-content').hide();
 //Remove sidebar if empty
-if(!$('.sidebar-content:not(:has(.widget))')) {
-  $('.sidebar-content').hide();
+if($('.sidebar .widget p').length > 1 || $('.sidebar li a').length > 1) {
+  $('.sidebar-content').show();
 }
 
 
