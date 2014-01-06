@@ -15,7 +15,6 @@ function resizeForSmallWindow() {
   $('.page-header-border').remove();
   $('<div class="page-header-border"></div>').prependTo('.page-header');
   $('.more-listing').insertAfter('.page-header-border');
-  $('.other-categories').hide();
   $('.more-text').hide();
   $('.start').remove();
   $('<div class="mobile start"><a href="/get-started" class="get-started button-green mobile">Get Started</a></div>').insertAfter('header .top-mobile');
@@ -92,6 +91,9 @@ function checkWidth() {
 }
 // Execute on load
 checkWidth();
+if ($(window).width()) {
+  $('.other-categories').hide();
+}
 
 
 //Move Get Started button for tablet vs. mobile
