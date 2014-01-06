@@ -4,10 +4,6 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <title><?php wp_title('|', true, 'right'); ?></title>
-  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.ico" />
-  //Fix Windows 8 Viewport
 	<script type="text/javascript"> 
 	<!--
 	(function() {
@@ -21,6 +17,9 @@
 	})();
 	//-->
   </script>
+  <meta charset="utf-8">
+  <title><?php wp_title('|', true, 'right'); ?></title>
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.ico" />
   <script type="text/javascript">
     var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
   </script>
