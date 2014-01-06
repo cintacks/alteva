@@ -1,14 +1,15 @@
 //Fix Windows 8 Viewport
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement("style");
-  msViewportStyle.appendChild(
-    document.createTextNode(
-      "@-ms-viewport{width:auto!important}"
-    )
-  );
-  document.getElementsByTagName("head")[0].
-    appendChild(msViewportStyle);
-}
+<!--
+(function() {
+    if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement("style");
+        msViewportStyle.appendChild(
+            document.createTextNode("@-ms-viewport{width:auto!important}")
+        );
+        document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+    }
+})();
+//-->
 
 
 function flagDropdownsWithMultipleItems(parent) {
@@ -283,7 +284,7 @@ menuscroll();
       $('.network-status-problem').hide(100);
 
       $.post(
-        ajaxurl, 
+        ajaxurl,
 	{ 'action': 'hide_network_status' }
       );
   });
