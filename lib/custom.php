@@ -176,7 +176,7 @@ function get_current_network_status($problem_only = false) {
     $messages[] = "<div class='{$class}'>{$pod->display('content')}</div>";
   }
 
-  return join("<br /><br />", $messages);
+  return join($messages);
 }
 
 add_action('wp_ajax_hide_network_status', 'alteva_hide_network_status');
