@@ -432,7 +432,13 @@
     width: 100%;
     position: fixed;
     z-index: 9999;
+    top:0;
+    left:0;
    }
+
+  .logged-in .navbar-inverse {
+    top:28px;
+  }
 
   .nav {
      margin-bottom:0;
@@ -991,7 +997,7 @@
 
   //Sidebar
 
-  .sidebar-content {
+  [class*="span"].sidebar-content {
     clear:both;
     width:96%;
     margin:13px 0 24px 0;
@@ -999,6 +1005,7 @@
     border-width:1px 0;
     position: relative;
     left:2%;
+    float: left;
   }
 
   .home .sidebar-content {
@@ -1299,6 +1306,25 @@
 
   .main-content .qa-faq h3 {
     font-size: 20px;
+  }
+
+  .faq h2 {
+    text-align: center;
+  }
+
+  #qaplus_searchform {
+    width:80%;
+    padding:0 10%;
+    margin: 0 auto;
+  }
+
+  #qaplus_searchform input[type="submit"] {
+    position: relative;
+    top:-4px;
+  }
+
+  #qasearch {
+    width: 70%;
   }
 
   .page.faq .main-content {

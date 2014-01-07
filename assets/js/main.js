@@ -16,9 +16,15 @@ function resizeForSmallWindow() {
   $('<div class="page-header-border"></div>').prependTo('.page-header');
   $('.more-listing').insertAfter('.page-header-border');
   $('.more-text').hide();
+  $('.other-categories').hide();
   $('.start').remove();
   $('<div class="mobile start"><a href="/get-started" class="get-started button-green mobile">Get Started</a></div>').insertAfter('header .top-mobile');
   $('.sidebar .network-status').appendTo('.page-header');
+  //Remove on class if subpage dropdown is not visible
+  if ($('.other-categories').css('display') == 'none') {
+     $('.more-listing').removeClass('on');
+     $('.more-title').removeClass('on');
+  }
 }
 
   //Display for subpage expandable menus
@@ -89,11 +95,8 @@ function checkWidth() {
         $('.dropdown').removeClass('dropdown').addClass('dropdown-off');
     }
 }
-// Execute on load
+
 checkWidth();
-if ($(window).width()) {
-  $('.other-categories').hide();
-}
 
 
 //Move Get Started button for tablet vs. mobile
@@ -307,8 +310,23 @@ if($('.sidebar .widget p').length > 1 || $('.sidebar li a').length > 1) {
   $('.sidebar-content').show();
 }
 
+//Safari CSS Hack
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+  $('body').addClass('safari');
+}
 
+//Firefox CSS Hack
+if (navigator.userAgent.indexOf('Firefox') != -1) {
+  $('body').addClass('firefox');
+}
 
+//IE hack CSS hack 
+if (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) {
+   $('body').addClass('ie');
+   $(document).ready(function() {
+     $('.affix-container').prependTo('body');
+   });
+}
 
 
 

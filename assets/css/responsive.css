@@ -871,6 +871,8 @@
   }
   .nav-main {
     clear: both;
+    position: relative;
+    z-index: 9999;
   }
   a.get-started {
     float: right;
@@ -958,6 +960,10 @@
     text-shadow: none;
     filter: !important;
     /*For IE*/
+  }
+  [class*="span"].sidebar-content {
+    margin-left: 0;
+    margin-right: 60px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1079px) {
@@ -1391,7 +1397,7 @@
   }
   .home .case-study-body {
     position: relative;
-    top: 10%;
+    top: 3%;
     left: 3%;
   }
   .home .case-study-body h2 {
@@ -1400,21 +1406,25 @@
   .row#featured-story-one {
     -webkit-background-size: 44% !important;
     background-size: 44% !important;
+    background-position: 97% 0 !important;
   }
   .home .case-study {
-    height: 495px !important;
-    background-position: 0 0 !important;
-    -webkit-background-size: 100% !important;
-    background-size: 100% !important;
+    background-position: -72px 0 !important;
+    -webkit-background-size: 111% !important;
+    background-size: 111% !important;
+    width: 100%;
+    margin: 0 0 50px 0 !important;
   }
   .home .case-study-body h1.large {
-    font-size: 37px;
-    line-height: 37px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 8px;
   }
   .case-study-image {
-    top: -33% !important;
-    margin-right: 4% !important;
+    top: -25% !important;
+    margin-right: 0 !important;
+    width: 37%;
+    left: 5% !important;
   }
   #featured-story-two .spancontent {
     padding: 25px !important;
@@ -1527,6 +1537,19 @@
   }*/
   #topbar {
     display: none;
+  }
+}
+@media (min-width: 900px) and (max-width: 1079px) {
+  .case-study {
+    height: 495px !important;
+  }
+  .home .case-study-body {
+    top: 10% !important;
+  }
+  .row#featured-story-one {
+    background-position: 90% 0 !important;
+    -webkit-background-size: 40% !important;
+    background-size: 40% !important;
   }
 }
 @media (min-width: 320px) and (max-width: 1079px) {
@@ -1885,6 +1908,11 @@
     width: 100%;
     position: fixed;
     z-index: 9999;
+    top: 0;
+    left: 0;
+  }
+  .logged-in .navbar-inverse {
+    top: 28px;
   }
   .nav {
     margin-bottom: 0;
@@ -2348,7 +2376,7 @@
   .listing ul > li {
     line-height: 16px;
   }
-  .sidebar-content {
+  [class*="span"].sidebar-content {
     clear: both;
     width: 96%;
     margin: 13px 0 24px 0;
@@ -2356,6 +2384,7 @@
     border-width: 1px 0;
     position: relative;
     left: 2%;
+    float: left;
   }
   .home .sidebar-content {
     display: none;
@@ -2604,6 +2633,21 @@
   }
   .main-content .qa-faq h3 {
     font-size: 20px;
+  }
+  .faq h2 {
+    text-align: center;
+  }
+  #qaplus_searchform {
+    width: 80%;
+    padding: 0 10%;
+    margin: 0 auto;
+  }
+  #qaplus_searchform input[type="submit"] {
+    position: relative;
+    top: -4px;
+  }
+  #qasearch {
+    width: 70%;
   }
   .page.faq .main-content {
     padding: 0;
@@ -3014,7 +3058,7 @@
   .network-status-problem p,
   .page-header .network-status p {
     padding: 11px 0%;
-    width: 80%;
+    width: 75%;
     text-align: center;
     display: block;
     margin: 0 20%;
@@ -3023,9 +3067,13 @@
     line-height: normal;
   }
   .page-header .network-status p {
-    padding: 11px 10%;
+    padding: 11px 0%;
     display: table;
     margin: 0 auto;
+  }
+  .page-header .normal,
+  .page-header .problem {
+    width: 100%;
   }
   .slide h3 {
     font-size: 30px;
@@ -3190,6 +3238,9 @@
   }
   .w2lsubmit {
     display: table;
+  }
+  #qasearch {
+    width: 60%;
   }
 }
 @media (max-width: 1079px) {

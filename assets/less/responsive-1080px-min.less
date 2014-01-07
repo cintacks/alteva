@@ -586,6 +586,8 @@ footer .nav-collapse {
 
   .nav-main {
     clear: both;
+    position: relative;
+    z-index: 9999;
   }
 
   a.get-started {
@@ -684,6 +686,11 @@ footer .nav-collapse {
   background-color: #d3d3d3;
   text-shadow: none;
   filter: !important; /*For IE*/
+  }
+
+  [class*="span"].sidebar-content {
+    margin-left:0;
+    margin-right:60px !important;
   }
 
 
