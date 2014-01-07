@@ -25,6 +25,10 @@ function resizeForSmallWindow() {
      $('.more-listing').removeClass('on');
      $('.more-title').removeClass('on');
   }
+  //Show other cat block on small layout for top level pages
+  if($('body').hasClass('solutions') || $('body').hasClass('services') || $('body').hasClass('industries')) {
+    $('.more-listing').show();
+  }
 }
 
   //Display for subpage expandable menus
@@ -50,6 +54,10 @@ function resizeForLargeWindow() {
   $('.more-text').show();
   $('.other-categories').show();
   $('.support .page-header .network-status').appendTo('.sidebar');
+  //Hide other cat block on wide layout for top level pages
+  if($('body').hasClass('solutions') || $('body').hasClass('services') || $('body').hasClass('industries')) {
+    $('.more-listing').hide();
+  }
 }
 
 function mobileWindowSize() {

@@ -52,6 +52,35 @@ function get_more_posts_of_same_type() {
   return $result;
 }
 
+function solcat() {
+if (current_page() == 'solutions') {
+  $type = 'solution_category';
+} 
+if(current_page() == 'services') {
+  $type = 'service_category';
+}
+else {
+  if(current_page() == 'industries') {
+  $type = 'industry_category';
+  } 
+}
+
+
+$args=array(
+  'post_type' => $type,
+  'post_status' => 'publish'
+  );
+
+$my_query = null;
+$my_query = new WP_Query($args);
+if( $my_query->have_posts() ) {
+  while ($my_query->have_posts()) : $my_query->the_post(); ?>
+    <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+    <?php
+  endwhile;
+}
+}
+
 function get_category_listing() {
   $order    = 'order="CAST(display_order.meta_value AS SIGNED) ASC"';
   $template = "category_listing";
