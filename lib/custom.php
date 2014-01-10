@@ -1,4 +1,5 @@
 <?php
+
 function get_current_pod() {
   global $wp_query;  
   
@@ -52,33 +53,37 @@ function get_more_posts_of_same_type() {
   return $result;
 }
 
-function solcat() {
-if (current_page() == 'solutions') {
-  $type = 'solution_category';
-} 
-if(current_page() == 'services') {
-  $type = 'service_category';
-}
-else {
-  if(current_page() == 'industries') {
-  $type = 'industry_category';
-  } 
+function current_page_pod_label_plural() {
+  $map = array(
+    'solutions'  => 'Solutions',
+    'services'   => 'Services',
+    'industries' => 'Industries'
+  );
+  
+  return (isset($map[current_page()])) ? $map[current_page()] : null;
 }
 
-
-$args=array(
-  'post_type' => $type,
-  'post_status' => 'publish'
+function current_page_pod_type() {
+  $map = array(
+    'solutions' => 'solution_category',
+    'services'  => 'service_category',
+    'industries' => 'industry_category',
   );
 
-$my_query = null;
-$my_query = new WP_Query($args);
-if( $my_query->have_posts() ) {
-  while ($my_query->have_posts()) : $my_query->the_post(); ?>
-    <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
-    <?php
-  endwhile;
+  return (isset($map[current_page()])) ? $map[current_page()] : null;
 }
+
+function solcat() {
+  $my_query = new WP_Query(array(
+    'post_type'   => current_page_pod_type(),
+    'post_status' => 'publish'
+  ));
+  
+  if($my_query->have_posts()) :
+    while ($my_query->have_posts()) : $my_query->the_post(); ?>
+       <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li><?php
+    endwhile;
+  endif;
 }
 
 function get_category_listing() {

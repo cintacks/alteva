@@ -6,29 +6,12 @@
   </div></div>
 <?php endif; ?>
 
-<?php if (current_page() == 'solutions') : ?>
-   <div class="row"><div class="span6 more-listing">
-    <span class="more-text">More Solutions</span>
-    <span class="more-title mobile blue">Solutions</span>
-	<ul class="other-categories"><?php echo solcat(); ?></ul>
-
-  </div></div>
-<?php endif; ?>
-
-<?php if (current_page() == 'services') : ?>
-   <div class="row"><div class="span6 more-listing">
-    <span class="more-text">More Services</span>
-    <span class="more-title mobile blue">Services</span>
-	<ul class="other-categories"><?php echo solcat(); ?></ul>
-
-  </div></div>
-<?php endif; ?>
-
-<?php if (current_page() == 'industries') : ?>
-   <div class="row"><div class="span6 more-listing">
-    <span class="more-text">More Industries</span>
-    <span class="more-title mobile blue">Industries</span>
-	<ul class="other-categories"><?php echo solcat(); ?></ul>
-
+<?php $top_level_pages = array('solutions', 'services', 'industries'); ?>
+<?php if(in_array(current_page(), $top_level_pages)) : ?>
+  <?php $label = current_page_pod_label_plural(); ?> 
+  <div class="row"><div class="span6 more-listing">
+    <span class="more-text">More <?php echo $label; ?></span>
+    <span class="more-title mobile blue"><?php echo $label; ?></span>
+    <ul class="other-categories"><?php echo solcat(); ?></ul>
   </div></div>
 <?php endif; ?>
