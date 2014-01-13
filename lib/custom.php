@@ -104,7 +104,7 @@ function get_category_listing() {
   case 'case-studies':
     $name = "case_study";
     break;
-  case 'team-members':
+  case 'company/team-members':
     $name     = "team_member";
     $template = "employee_listing";
     break;   
@@ -127,7 +127,7 @@ function get_category_listing_label() {
   case 'case-studies':
     return "Some Of Our Customers";
     break;
-  case 'team-members':
+  case 'company/team-members':
     return "Alteva Executive Team";
     break;   
   default:
