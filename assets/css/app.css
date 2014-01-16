@@ -1246,6 +1246,9 @@ a.button-lightgrey:focus {
 #services, #whyAlteva {
   padding-left: 66px;
   background-position: 0 30% !important;
+  min-height:43px;
+  float: left;
+  clear: both;
 }
 
 #whyCloud{
