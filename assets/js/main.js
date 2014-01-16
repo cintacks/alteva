@@ -310,6 +310,9 @@ menuscroll();
     }
   });
 
+  //Move Career description below location
+  $('#jobdesc').insertAfter('#location');
+
 });
 
 $('.sidebar-content').hide();

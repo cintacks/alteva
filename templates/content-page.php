@@ -16,8 +16,14 @@
     <?php endif; ?>
   </div>
   <div class="span6 main-content">
-
-    <?php the_content(); ?>
+    <?php if(current_post_type() == 'career') : ?>
+      <div id="jobdesc">
+        <?php echo "<strong>Job Description:</strong>"; ?>
+        <?php the_content(); ?>
+      </div>
+      <?php else: ?>
+        <?php the_content(); ?>
+      <?php endif; ?>
 
 
     <?php if(current_page() == 'company/careers/careers') : ?>
