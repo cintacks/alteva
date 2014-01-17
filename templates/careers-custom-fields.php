@@ -28,7 +28,7 @@ if(!empty($qualifications)) {
 }
 
 if(!empty($requirements)) {
-  echo "<p><strong>Educations Requirements:</strong><br />{$requirements}</p>";
+  echo "<p><strong>Education Requirements:</strong><br />{$requirements}</p>";
 }
 
 if(!empty($apply_url)) {
