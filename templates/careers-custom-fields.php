@@ -33,5 +33,5 @@ if(!empty($requirements)) {
 
 if(!empty($apply_url)) {
   $target = strpos($apply_url, "mailto") === 0 ? "" : " target='_blank'";
-  echo "<p><a href='mailto:hr@alteva.com?subject=Position: $title'{$target}>Apply Now</a></p>";
+  echo "<p><a href='mailto:hr@alteva.com?subject=Position: {$title} - {$location}'{$target}>Apply Now</a></p>";
 }
