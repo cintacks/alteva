@@ -34,6 +34,10 @@
     <?php if(current_post_type() == 'career') : ?>
       <?php get_template_part('templates/careers', 'custom-fields'); ?>
     <?php endif; ?>
+
+    <?php if(current_page() == 'company/investors/news') : ?>
+      <?php get_template_part('templates/pods', 'news-listing'); ?>
+    <?php endif; ?>
     
   </div>
   
