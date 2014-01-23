@@ -1,5 +1,5 @@
 <?php
-$pod = pods('career', array('limit' => 25, 'orderby' => 'title ASC')); 
+$pod = pods('career', array('limit' => 25)); //, 'orderby' => 'title ASC')); 
 ?>
 <p></p>
 <div class="news-listing">  
