@@ -763,7 +763,7 @@ a.button-lightgrey:focus {
 	-webkit-box-shadow: inset 0 0 10px #CFD4DB;
 	box-shadow: inset 0 0 10px #CFD4DB;
    padding: 10px 0 0;
-   max-height:603px;
+   max-height:500px;
    display: block;
    position: relative;
 }
@@ -851,6 +851,7 @@ a.button-lightgrey:focus {
    left:45%;
    clear: both;
    position: absolute;
+   display: none;
 }
 
 .slide-subtitle {
@@ -859,13 +860,13 @@ a.button-lightgrey:focus {
 }
 
 .slide h3 {
-  font-size: 60px;
+  font-size: 45px;
   color: #0090c9;
   font-weight: normal;
-  line-height: 60px;
+  line-height: 45px;
   font-weight: 700;
   text-transform: uppercase;
-  margin:0 0 25px;
+  margin:0 0 10px;
 }
 
 .slide h3:first-line {

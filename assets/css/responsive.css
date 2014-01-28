@@ -463,7 +463,8 @@
   #slideshow {
     width: 1270px;
     margin-bottom: 95px;
-    height: 603px;
+    /*height: 603px;*/
+    padding-bottom: 15px;
     background: #fcfdfd;
     left: -80px;
   }
@@ -609,8 +610,8 @@
   .slides,
   .slides img,
   .slide {
-    min-width: 900px !important;
-    width: 900px;
+    /*min-width: 900px !important;*/
+    width: 750px;
   }
   .slider-prev,
   .slider-next {
@@ -1670,9 +1671,14 @@
   .slide {
     width: 100% !important;
     max-width: 713px;
-    max-height: 491px;
+    max-height: 350px;
     min-width: 320px;
   }
+
+  .slides img {
+    max-width: 580px;
+  }
+
   .span14 {
     width: 100%;
   }
@@ -1695,14 +1701,16 @@
     left: 0 !important;
     width: 100%;
     bottom: 13px;
+    display: none;
   }
   .slider-prev,
   .slider-next {
     top: 42%;
   }
   .slide h3 {
-    font-size: 46px;
-    line-height: 51px;
+    font-size: 37px;
+    line-height: 37px;
+    margin-bottom: 13px;
   }
   .slide-subtitle {
     font-size: 18px;
@@ -2722,6 +2730,10 @@
   .listing-image.right {
     left: 0 !important;
   }
+
+  .slides {
+    max-height: 345px !important;
+  }
 }
 @media (max-width: 667px) {
   [class*="span"],
@@ -3115,13 +3127,13 @@
     width: 100%;
   }
   .slide h3 {
-    font-size: 30px;
-    line-height: 35px;
-    margin: 30px 0 23px 0;
+    font-size: 28px;
+    line-height: 26px;
+    margin: 20px 0 10px 0;
   }
   .slide-subtitle {
-    font-size: 19px;
-    line-height: 23px;
+    font-size: 17px;
+    line-height: 19px;
     padding: 0 10px;
   }
   .slides > div > a {
@@ -3140,6 +3152,11 @@
   .slide {
     margin: 0;
   }
+
+  .slides {
+    max-height: 278px;
+  }
+
   .homepage-blocks {
     margin: 15px 20px;
   }
