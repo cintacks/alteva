@@ -31,7 +31,7 @@ if(!empty($requirements)) {
   echo "<p><strong>Education Requirements:</strong><br />{$requirements}</p>";
 }
 
-if(!empty($apply_url)) {
-  $target = strpos($apply_url, "mailto") === 0 ? "" : " target='_blank'";
+//if(!empty($apply_url)) {
+// $target = strpos($apply_url, "mailto") === 0 ? "" : " target='_blank'";
   echo "<p><a href='mailto:hr@alteva.com?subject=Position: {$title} - {$location}'{$target}>Apply Now</a></p>";
-}
+//}
