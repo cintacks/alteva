@@ -3127,19 +3127,19 @@
     width: 100%;
   }
   .slide h3 {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 26px;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 7px 0;
   }
   .slide-subtitle {
-    font-size: 17px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 17px;
     padding: 0 10px;
   }
   .slides > div > a {
     font-size: 19px;
     padding: 2px 20px;
-    margin-top: 6px;
+    margin-top: 2px;
   }
   .slider-pager a {
     width: 11px;
