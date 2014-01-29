@@ -98,19 +98,19 @@ vertical-align: middle;
 }
 
 input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-width:85%;
+width:60%;
 height: 24px;
 padding: 4px 6px;
 }
 
 textarea {
-	width:85%;
+	width:60%;
 height: 80px;
 padding: 4px 6px;
 }
 
 select {
-width:85%;
+width:61.5%;
 height: 36px;
 padding: 4px 6px;
 }
