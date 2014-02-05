@@ -18,10 +18,10 @@
 <?php $press = pods('press_release', array('limit' => 3, 'orderby' => 'pub_date DESC')); ?>
   <div class="span6 home-press">
     <div class="whitebg">
-      <h2 class="light lgrey">Press</h2>
-      <h1 class="large dgrey">Releases</h1>
+      <h2 class="light lgrey">Alteva</h2>
+      <h1 class="large dgrey">News</h1>
     </div>
-    <a href="<?php echo get_permalink(get_page_by_path('press-releases')); ?>" class="button-lightgrey">View All Press Releases</a>
+    <a href="<?php echo get_permalink(get_page_by_path('press-releases')); ?>" class="button-lightgrey">View All Alteva News</a>
     <?php while($press->fetch()) : ?>
       <div class="view-row">
         <div class="news-date"><?php echo date('F j, Y', strtotime($press->field('pub_date'))) ?></div>

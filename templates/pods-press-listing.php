@@ -1,7 +1,7 @@
 <?php
 $press = pods('press_release', array('limit' => 5, 'orderby' => 'pub_date DESC')); 
 ?>
-<div class="row category-listing-label">Latest Press Releases</div>
+<div class="row category-listing-label">Latest News from Alteva</div>
 <div class="news-listing">  
     <?php while($press->fetch()) : ?>
       <div class="row"><div class="span12">
